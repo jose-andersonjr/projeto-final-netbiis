@@ -11,23 +11,32 @@
     <title>Entrar</title>
 </head>
 <body>
-    <div class="container d-flex justify-content-center">
-        <form action="." class="form-group">
-            <div class="form-container">
-                <h3 class="pb-4">LOGIN</h3>
-                <div id="inputs_form" >
-                    <!-- <div id="topicos">Dados pessoais</div> -->
-                    <!-- <hr> -->
-                    <input type="email" class="form-control" name="email" placeholder="E-mail...">
-                    
-                    <input type="password" class="form-control" name="password" placeholder="Insira sua senha">
-
-                </div>
-                <input type="submit" class="btn btn-primary mt-5" name="acao" value="Cadastre-se" id="cadastrar">
-                <a href="#">Esqueceu a senha? Recuperar</a><br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-9" id="img-container">
+                
             </div>
-            
-        </form>
+            <div class="col-3" id="container-form">  
+                <form action="." >
+                    <div class="form-group ">
+                        <img src="img/logo-wasabiapp.png" id="logo-wasabiapp" alt="">
+
+                        <div id="inputs_form" class="pt-5">
+                            <!-- <div id="topicos">Dados pessoais</div> -->
+                            <!-- <hr> -->
+                            <input type="email" class="form-control" name="email" placeholder="E-mail...">
+                            <input type="password" class="form-control" name="password" placeholder="Insira sua senha">
+                        </div>
+                        <input type="submit" class="btn btn-primary mt-5" name="acao" value="Login" id="login">
+                        <input type="submit" class="btn btn-primary" name="cadastrar" value="Cadastrar-se" id="btn-cadastrar">
+                        
+                    </div>
+                    
+                </form>
+            </div>
+
+        </div>
+
     </div>
 </body>
 </html>
