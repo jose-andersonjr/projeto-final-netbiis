@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #EBC657 -10%, #DB8E52, #E8504A);
+}
+
+input {
+    margin: 2em 2em 2em 0;
+    width: 18em!important;
+    background-color: white;
+}
+
+form {
+    
+    padding: 3em 5em 3em 5em;
+    max-width: 55em;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 40px -9px rgba(0,0,0,0.50);
+-moz-box-shadow: 0px 0px 40px -9px rgba(0,0,0,0.50);
+box-shadow: 0px 0px 40px -9px rgba(0,0,0,0.50);
+
+
+}
+
+.form-group{
+    background-color: antiquewhite;
+}
+
+.btn {
+    margin-top: 0;
+}
+
+.form-container {
+    width: 50em;
+    display: table-caption;
+
+}
+
+.form-control{
+    background-color: white;
+}
+
+#topicos{
+    text-align: left;
+}
+/* .container {
+    background: #FFFFFF url("img/logo-topo.jpg") no-repeat right top fixed;
+    background-size: 10em;
+} */
