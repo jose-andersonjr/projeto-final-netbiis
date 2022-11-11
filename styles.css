@@ -2,46 +2,62 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-family: Helvetica;
+    font-weight: 600;
 }
 
 body{
-    background-image: linear-gradient(to bottom, #EBC657 -10%, #DB8E52, #E8504A);
+    background-image: linear-gradient(to right, #EBC657 -10%, #DB8E52, #E8504A);
 }
 
 input {
-    margin: 2em 2em 2em 0;
-    width: 18em!important;
+    margin: 1em 0 1em 0;
+    width: 22em!important;
+    height: 3.2em;
     background-color: white;
+    align-self: center;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(44, 44, 44, 0.3);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(44, 44, 44, 0.3);
+    box-shadow: 0px 0px 2px 1px rgba(44, 44, 44,0.3);
 }
 
 form {
-    
     padding: 3em 5em 3em 5em;
     max-width: 55em;
-    width: 80%;
+    width: 45%;
+    /* border-radius: 1.5em; */
     display: flex;
     justify-content: center;
     text-align: center;
-    -webkit-box-shadow: 0px 0px 40px -9px rgba(0,0,0,0.50);
--moz-box-shadow: 0px 0px 40px -9px rgba(0,0,0,0.50);
-box-shadow: 0px 0px 40px -9px rgba(0,0,0,0.50);
+    -webkit-box-shadow: 0px 0px 12px -3px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 12px -3px rgba(0,0,0,1);
+    box-shadow: 0px 0px 12px -3px rgba(0,0,0,1);
 
 
 }
+
 
 .form-group{
-    background-color: antiquewhite;
+    margin: 1em 2em 1em 2em;
+    background-color: rgb(243, 243, 243);
 }
 
-.btn {
-    margin-top: 0;
+.btn-primary{
+    background-color: red;
+    border:none;
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background-color: rgb(173, 8, 8);
+    transition: 0.5s;
 }
 
 .form-container {
     width: 50em;
-    display: table-caption;
+    display: block;
+    align-items: center;
+
 
 }
 
