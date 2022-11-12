@@ -19,6 +19,7 @@ input {
 
 form {
     /* border-radius: 1.5em; */
+    padding: auto;
     background-color: rgb(243, 243, 243);
     display: flex;
     text-align: center;
@@ -32,13 +33,12 @@ form {
     margin: 0 0;
 }
 .container-form{
-    margin: 2em 2em 2em 2em ;
+    margin: 3em 2em;
 }
 
 .container-inputs{
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 
@@ -71,9 +71,9 @@ form {
 }
 
 .container-fluid{
-    background-image: url("img/background-registrar.jpg");
-    background-repeat: no-repeat;
+    background-image: url("img/background-login.PNG");
     background-size: 100% 100%;
+    background-repeat: no-repeat;
     height: 100%;
     width: 100%;
 }
