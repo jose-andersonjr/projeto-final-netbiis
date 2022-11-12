@@ -29,12 +29,17 @@ body{
 }
 
 .card-carrosel{
-    height: 8em;
-    border: 1px solid black;
+    height: 10em;
+    margin-top: 0.5em;
+}
+
+.produto-carrosel img{
+    width: 80%;
+    height: 80%;
 }
 
 #carrosel-produtos{
-    
+    background-color: antiquewhite;
 }
 
 .container-fluid{
@@ -47,7 +52,7 @@ body{
 
 .container-card-produto{
     padding: 3% 0 3% 0.5em;
-
+    
     
 }
 
@@ -74,4 +79,12 @@ body{
 
     width: 95%;
     height: 80%;
+}
+
+.descricao-produto{
+    font-size: 14px;
+}
+
+.container-carrinho{
+    background-color: rgb(191, 206, 219);
 }
