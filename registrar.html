@@ -6,42 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="registrar.css">
     <script src="scripts2.js"></script>
-    <title>Entrar</title>
+    <title>Registrar</title>
 </head>
 <body>
-    <div class="container-fluid d-flex justify-content-center">
-        <form action="." class="form-group">
-            <div class="form-container">
-                <h3 class="pb-4" id="pdados">Preencha os seus <br>dados</h3>
-                <div id="inputs_form" >
-                    <!-- <div id="topicos">Dados pessoais</div> -->
-                    <!-- <hr> -->
-                    <input type="text" class="form-control" name="nome" placeholder="Insira seu nome...">
-                    <input type="email" class="form-control" name="email" placeholder="E-mail...">
-                    <input type="text" class="form-control" name="telefone" placeholder="Telefone...">
-                    <input type="text" class="form-control" name="cpf" placeholder="Cpf...">
-                    <input type="date" class="form-control" name="datanascimento" placeholder="Data de nascimento...">
-                    <!-- <div id="topicos">Endereço - Implementar a API do CEP autocomplete</div> -->
-                    <hr>
-                    <input type="text" class="form-control" name="nome" placeholder="CEP">
-                    <input type="text" class="form-control" name="logradouro" placeholder="Logradouro">
-                    <input type="text" class="form-control" name="numero" placeholder="Numero">
-                    <input type="text" class="form-control" name="bairro" placeholder="Bairro">
-                    <input type="text" class="form-control" name="cidade" placeholder="Cidade">
-                    <input type="text" class="form-control" name="ponto_referencia" placeholder="Ponto de referência">
-                    <input type="text" class="form-control" name="complemento" placeholder="Complemento">
-                    <hr>
-                    <div id="topicos"></div>
-                    <input type="password" class="form-control" name="password" placeholder="Insira sua senha">
-                    <input type="password" class="form-control" name="password" placeholder="Confirme sua senha">
-                </div>                
-                <input type="submit" class="btn btn-primary mt-5" name="acao" value="Cadastre-se" id="cadastrar">
-                <a href="login.html">Já possui cadastro? Entrar</a><br>
-            </div>
-            
-        </form>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="col-8 container-form">
+                <form action="." class="d-block">
+                    <h3 class="pb-4 pt-4">Preencha os seus dados</h3>
+                    <div class="row container-inputs">
+                        
+                        <div class="form-group col-6">
+                            
+                            <input type="text" class="form-control" name="nome" placeholder="Insira seu nome...">
+                        </div>
+                        
+                        <div class="form-group col-6">
+                            
+                            <input type="text" class="form-control" name="telefone" placeholder="Telefone...">
+                        </div>
+
+                        <div class="form-group col-12">
+                            
+                            <input type="email" class="form-control" name="email" placeholder="E-mail...">
+                        </div>
+                    
+    
+                        <div class="form-group col-6">
+                            
+                            <input type="text" class="form-control" name="cpf" placeholder="Cpf...">
+                        </div>
+                        <div class="form-group col-6">
+                            
+                            <input type="date" class="form-control" name="datanascimento" placeholder="Data de nascimento...">
+                        </div>
+                        <p class="text-left">Endereço:</p>
+                        <hr>
+                        <div class="form-group col-6">
+                            
+                            <input type="text" class="form-control" name="nome" placeholder="CEP">
+                        </div>
+                        <div class="form-group col-6">
+                            
+                            <input type="text" class="form-control" name="logradouro" placeholder="Logradouro">
+                        </div>
+                        <div class="form-group col-6">
+                            
+                            <input type="text" class="form-control" name="numero" placeholder="Numero">
+                        </div>
+                        <div class="form-group col-6">
+                            
+                            <input type="text" class="form-control" name="bairro" placeholder="Bairro">
+                        </div>
+                        <div class="form-group col-6">
+                            
+                            <input type="text" class="form-control" name="cidade" placeholder="Cidade">
+                        </div>
+                        <div class="form-group col-6">
+                            
+                            <input type="text" class="form-control" name="ponto_referencia" placeholder="Ponto de referência">
+                        </div>
+                        <div class="form-group col-12">
+                            
+                            <input type="text" class="form-control" name="complemento" placeholder="Complemento">
+                        </div>
+                        <div class="form-group col-6"></div>
+                        <hr>
+                        <div class="form-group col-6">
+                            
+                            <input type="password" class="form-control" name="password" placeholder="Insira sua senha">
+                        </div>
+                        <div class="form-group col-6">
+                            
+                            <input type="password" class="form-control" name="password" placeholder="Confirme sua senha">
+                        </div>
+                        <!-- <div id="topicos">Endereço - Implementar a API do CEP autocomplete</div> -->            
+                                          
+                        <input type="submit" class="btn btn-primary mt-5" name="acao" value="Cadastre-se" id="cadastrar">
+                        <a href="login.html">Já possui cadastro? Entrar</a><br>  
+                    </div>    
+                </form>
+            </div>     
+        </div>
     </div>
 </body>
 </html>

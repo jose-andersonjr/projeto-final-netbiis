@@ -7,12 +7,12 @@
 }
 
 body{
-    background-image: linear-gradient(to right, #EBC657 -10%, #DB8E52, #E8504A);
+
     overflow-y: hidden;
 }
 
 input {
-    margin: 1em 0 1em 0;
+    margin: 1em auto;
     width: 90%!important;
     height: 3.2em;
     background-color: white;
@@ -76,6 +76,7 @@ form {
 .container-fluid{
     background-image: url("img/background-login.PNG");
     background-size: 90% 100%;
+    background-repeat: no-repeat;
     height: 54em;
     width: 100%;
 }
@@ -98,6 +99,8 @@ form {
 #recuperar-senha{
     font-weight: 600;
 }
+
+
 
 /* centralizar os inputs e com o cadastre-se 
  hoover no cadastre-se
