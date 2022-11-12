@@ -13,12 +13,12 @@
     <script src="home.js" defer></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row d-flex justify-content-center" >
-            <img src="img/logo-wasabiapp.png" id="logo-wasabiapp" alt="">
-        </div>
-        <div class="row text-center" id="container-principal">
-            <div class="col-12">
+    <div class="row container-fluid">
+        <div id="container-principal" class="col-12">
+            <div class="row d-flex justify-content-center">
+                <img src="img/logo-wasabiapp.png" id="logo-wasabiapp" alt="">
+            </div>
+            <div class="row text-center">
                 <h4 class="pt-2 ">WASABI SUSHI</h4>
                 <p>Seu restaurante favorito de comida japonesa</p>
             </div>
@@ -42,102 +42,293 @@
                     <div class="produto">a</div>
                 </div>
             </div>
-            <div class="col-8">
-                <div class="row container-cardapio">
-                    <div class="col-7 categorias ">
-                        <!-- <select name="categorias" id="categorias">
-                            <option value="promocao">Promoção</option>
-                            <option value="hollwasabi">Hollwasabi</option>
-                            <option value="temaki">Temaki</option>
-                            <option value="entradas">Entradas</option>
-                          </select> -->
-                          <p>PROMOÇÃO | HOLLWASABI | TEMAKI | ENTRADAS</p>
-                    </div>
-                    <div class="col-5">
-                        <div class="campo-pesquisar">
+            <div class="row container-conteudo">
+                <div class="col-8">
+                    <div class="row pt-2">
+                        <p class="col-8">PROMOÇÃO | HOLLWASABI | TEMAKI | ENTRADAS</p>
+                        <div class="campo-pesquisar col">
                             <input type="text" placeholder="Pesquisar...">
-
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-12 d-flex justify-content-start">ENTRADAS</div>
+                    
+                    <div class="row container-cardapio-produtos">
+                        <div class="row d-flex justify-content-start texto-categoria">PROMOÇÕES</div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
+                                </div>
+                                <div class="imagem-produto col-4 ">
+                                    <img src="img/produtos/promocoes/CAMARÃO_EMPANADO_5_UNIDADES.webp" alt="">
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
+                                </div>
+                                <div class="imagem-produto col-4">
+                                    <img src="img/produtos/promocoes/COMBO_PROMO_01_15 PEÇAS.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
+                                </div>
+                                <div class="imagem-produto col-4">
+                                    <img src="img/produtos/promocoes/COMBO_PROMO_02 _15 PEÇAS.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
+                                </div>
+                                <div class="imagem-produto col-4">
+                                    <img src="img/produtos/promocoes/COMBO_PROMO_03_15 PEÇAS.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
+                                </div>
+                                <div class="imagem-produto col-4">
+                                    <img src="img/produtos/promocoes/COMBO_PROMO_6_15 PEÇAS.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
+                                </div>
+                                <div class="imagem-produto col-4">
+                                    <img src="img/produtos/promocoes/COMBO_PROMO_7_15 PEÇAS.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-12 container-cardapio-produtos">
-                            <div class="row">
-                                <div class="container-card-produto col-6">
-                                    <div class="row card-produto">
-                                        <div class="texto-produto col-8">
 
-                                        </div>
-                                        <div class="imagem-produto col-4 ">
-                                            <img src="img/produtos/promocao/CAMARÃO_EMPANADO_5_UNIDADES.webp" alt="">
-                                        </div>
-                                        
-                                    </div>
+                    <hr>
+                    <div class="row container-cardapio-produtos">
+                        <div class="row d-flex justify-content-start texto-categoria">ENTRADAS</div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
                                 </div>
-                                <div class="container-card-produto col-6">
-                                    <div class="row card-produto">
-                                        <div class="texto-produto col-8">
-
-                                        </div>
-                                        <div class="imagem-produto col-4">
-                                            <img src="img/produtos/promocao/COMBO_PROMO_01_15 PEÇAS.webp" alt="">
-                                        </div>
-                                    </div>
+                                <div class="imagem-produto col-4 ">
+                                    <img src="img/produtos/entradas/BOLINHAS_DE_SALMÃO_FRITAS.webp" alt="">
                                 </div>
-                                <div class="container-card-produto col-6">
-                                    <div class="row card-produto">
-                                        <div class="texto-produto col-8">
+                                
+                            </div>
+                        </div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
 
-                                        </div>
-                                        <div class="imagem-produto col-4">
-                                            <img src="img/produtos/promocao/COMBO_PROMO_02 _15 PEÇAS.webp" alt="">
-                                        </div>
-                                    </div>
                                 </div>
-                                <div class="container-card-produto col-6">
-                                    <div class="row card-produto">
-                                        <div class="texto-produto col-8">
-
-                                        </div>
-                                        <div class="imagem-produto col-4">
-                                            <img src="img/produtos/promocao/COMBO_PROMO_03_15 PEÇAS.webp" alt="">
-                                        </div>
-                                    </div>
+                                <div class="imagem-produto col-4">
+                                    <img src="img/produtos/entradas/GUIOZA_5_UNIDADES.webp" alt="">
                                 </div>
-                                <div class="container-card-produto col-6">
-                                    <div class="row card-produto">
-                                        <div class="texto-produto col-8">
+                            </div>
+                        </div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
 
-                                        </div>
-                                        <div class="imagem-produto col-4">
-                                            <img src="img/produtos/promocao/COMBO_PROMO_6_15 PEÇAS.webp" alt="">
-                                        </div>
-                                    </div>
                                 </div>
-                                <div class="container-card-produto col-6">
-                                    <div class="row card-produto">
-                                        <div class="texto-produto col-8">
+                                <div class="imagem-produto col-4">
+                                    <img src="img/produtos/entradas/HOLL_TARTAR_DE_SALMÃO.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
 
-                                        </div>
-                                        <div class="imagem-produto col-4">
-                                            <img src="img/produtos/promocao/COMBO_PROMO_7_15 PEÇAS.webp" alt="">
-                                        </div>
-                                    </div>
+                                </div>
+                                <div class="imagem-produto col-4">
+                                    <img src="img/produtos/entradas/KASAI.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
+                                </div>
+                                <div class="imagem-produto col-4">
+                                    <img src="img/produtos/entradas/LULA_EM_ANÉIS_GRELHADA.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
+                                </div>
+                                <div class="imagem-produto col-4">
+                                    <img src="img/produtos/entradas/MEGASABI.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="row container-cardapio-produtos">
+                        <div class="row d-flex justify-content-start texto-categoria">TEMAKI</div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
+                                </div>
+                                <div class="imagem-produto col-4 ">
+                                    <img src="img/produtos/temaki/PROMO_VEGANO_ 15_PEÇAS.webp" alt="">
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
+                                </div>
+                                <div class="imagem-produto col-4">
+                                    <img src="img/produtos/temaki/SKINMAKI.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
+                                </div>
+                                <div class="imagem-produto col-4">
+                                    <img src="img/produtos/temaki/TEMAKI_EXOTIC.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
+                                </div>
+                                <div class="imagem-produto col-4">
+                                    <img src="img/produtos/temaki/TEMAKI_PORÓ.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
+                                </div>
+                                <div class="imagem-produto col-4">
+                                    <img src="img/produtos/temaki/TEMAKI_SALMÃO_ESPECIAL.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
+                                </div>
+                                <div class="imagem-produto col-4">
+                                    <img src="img/produtos/temaki/TEMAKI_WASABI_ESPECIAL.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                    <div class="row container-cardapio-produtos">
+                        <div class="row d-flex justify-content-start texto-categoria">WASABI</div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
+                                </div>
+                                <div class="imagem-produto col-4 ">
+                                    <img src="img/produtos/wasabiholl/PATINHAS_DE_CARANGUEJO.webp" alt="">
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
+                                </div>
+                                <div class="imagem-produto col-4">
+                                    <img src="img/produtos/wasabiholl/MISSOSHIRU.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
+                                </div>
+                                <div class="imagem-produto col-4">
+                                    <img src="img/produtos/wasabiholl/WASABI_ESPECIAL.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
+                                </div>
+                                <div class="imagem-produto col-4">
+                                    <img src="img/produtos/wasabiholl/SALMÃO_EM_CONSUMER.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
+                                </div>
+                                <div class="imagem-produto col-4">
+                                    <img src="img/produtos/wasabiholl/logo-wasabiapp.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-card-produto col-6">
+                            <div class="row card-produto">
+                                <div class="texto-produto col-8">
+
+                                </div>
+                                <div class="imagem-produto col-4">
+                                    <img src="img/produtos/wasabiholl/WASABI_HOLL.webp" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="row container-carrinho">
-                    <div class="col-12 bg-secondary">carrinho</div>
+                <div class="col-4">
+                    <div class="row container-carrinho">
+                        <div class="col-12 bg-secondary">carrinho</div>
+                    </div>
+                </div>        
+        
+                    </div>
                 </div>
-                
-            </div>     
+    
+                </div>
+
+            </div>
+            
         </div>
+        
     </div>  
 </body>
 

@@ -30,15 +30,14 @@ body{
 
 .card-carrosel{
     height: 8em;
-    padding: 1em 1em 1em 1em ;
+    border: 1px solid black;
 }
 
 #carrosel-produtos{
-
-    background-color: aqua;
+    
 }
 
-body{
+.container-fluid{
     background-position: center top;
     background-image: url("img/topo-home.jpg");
     background-repeat: no-repeat;
@@ -52,10 +51,10 @@ body{
     
 }
 
-.card-produto{
-    border: 1px solid black;
-    height: 12em;
+.texto-categoria{
+    margin-left: 3%;
 }
+
 
 .container-carrinho{
     margin: 1em;
