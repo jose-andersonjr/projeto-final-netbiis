@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: Helvetica;
+    
+
+}
+
+body{
+    background-color: #F0EBEE;
+}
+
+#logo-wasabiapp{
+    margin-top: 1em;
+    width: 10em;
+    height: auto;
+    border: 3px solid rgba(75, 74, 74, 0.493);
+    background-color: white;
+}
+
+#container-principal{
+    background-color: white;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+   
+}
+
+.card-carrosel{
+    height: 8em;
+    padding: 1em 1em 1em 1em ;
+}
+
+#carrosel-produtos{
+
+    background-color: aqua;
+}
+
+body{
+    background-position: center top;
+    background-image: url("img/topo-home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.container-card-produto{
+    padding: 3% 0 3% 0.5em;
+
+    
+}
+
+.card-produto{
+    border: 1px solid black;
+    height: 12em;
+}
+
+.container-carrinho{
+    margin: 1em;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1em;
+    height: 30em;
+}
+
+.campo-pesquisar{
+    display: flex;
+    justify-content: end;
+    margin-right: 0.7em;
+}
+
+.imagem-produto img{
+
+    width: 95%;
+    height: 80%;
+}
