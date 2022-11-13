@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
     box-sizing: border-box;
     /* font-family: 'Montserrat', sans-serif; */
     font-family: Helvetica;
@@ -13,11 +13,12 @@ body{
 }
 
 #logo-wasabiapp{
-    margin-top: 1em;
+    margin-top: 5%;
     width: 10em;
     height: auto;
-    border: 3px solid rgba(75, 74, 74, 0.493);
     background-color: white;
+    border-radius: 10%;
+
 }
 
 #container-principal{
@@ -39,35 +40,47 @@ body{
 }
 
 #carrosel-produtos{
-    background-color: antiquewhite;
+    background-color: whitesmoke;
     height: auto;    
 }
 
 #container-pagina{
+    background-color: rgba(207, 45, 45, 0.637);
     background-position: center top;
     background-image: url("img/topo-home.jpg");
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+ 
+
     
 }
 
 .container-card-produto{
-    padding: 3% 0 3% 0.5em;
-    
-    
+    padding: 1% 2%;
+}
+
+.card-produto{
+    background-color: rgba(223, 222, 222, 0.705);
+    border: 1px solid rgba(223, 222, 222, 0.705);
+    border-radius: 5px;
 }
 
 .texto-categoria{
-    margin-left: 3%;
+    margin-left: 0.1%;
+    font-weight: 500;
+    font-size: 130%;
 }
 
 
 .container-carrinho{
     margin: 1em;
-    position: -webkit-sticky;
     position: sticky;
     top: 1em;
     height: 30em;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(44, 44, 44, 0.315);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(44, 44, 44, 0.315);
+    box-shadow: 0px 0px 2px 1px rgba(119, 73, 73, 0.315);
 }
 
 .campo-pesquisar{
@@ -75,20 +88,46 @@ body{
     justify-content: end;
 }
 
-.imagem-produto img{
+.campo-pesquisar input{
+    width:70%;
+}
 
-    width: 95%;
-    height: 80%;
+.imagem-produto img{
+    width: 19vh;
+    height: 14vh;
+    margin: auto;
+    float: right;
+    border-radius: 2px;
+}
+
+.imagem-produto{
+    padding: 1% 1%;
+    
 }
 
 .descricao-produto{
     font-size: 14px;
 }
 
-.container-carrinho{
-    background-color: rgb(191, 206, 219);
-}
 
 .container-logo{
     background-color: rgba(0, 0, 0, 0);
+}
+
+footer{
+    color: whitesmoke;
+    background-color: rgb(16, 14, 14);
+    height: 10vh;
+}
+
+.titulo-carrinho p{
+    font-weight: 600;
+    font-size: 150%;
+    text-align: center;
+}
+
+#hyperlink-categoria{
+    padding-left: 1%;
+    font-size: 120%;
+    font-weight: 400;
 }
