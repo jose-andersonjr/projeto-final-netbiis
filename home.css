@@ -35,7 +35,7 @@ body{
 
 .produto-carrosel img{
     width: 80%;
-    height: 80%;
+    height: 100%;
 }
 
 #carrosel-produtos{
@@ -73,7 +73,6 @@ body{
 .campo-pesquisar{
     display: flex;
     justify-content: end;
-    margin-right: 0.7em;
 }
 
 .imagem-produto img{
@@ -88,4 +87,8 @@ body{
 
 .container-carrinho{
     background-color: rgb(191, 206, 219);
+}
+
+.container-logo{
+    background-color: rgba(0, 0, 0, 0);
 }
