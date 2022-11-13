@@ -29,7 +29,7 @@ body{
 }
 
 .card-carrosel{
-    height: 10em;
+    height: 100%;
     margin-top: 0.5em;
 }
 
@@ -40,6 +40,7 @@ body{
 
 #carrosel-produtos{
     background-color: antiquewhite;
+    height: auto;    
 }
 
 .container-fluid{
