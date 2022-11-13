@@ -43,7 +43,7 @@ body{
     height: auto;    
 }
 
-.container-fluid{
+#container-pagina{
     background-position: center top;
     background-image: url("img/topo-home.jpg");
     background-repeat: no-repeat;
