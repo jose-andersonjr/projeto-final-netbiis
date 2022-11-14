@@ -11,7 +11,6 @@
     border: 1px solid rgba(88, 86, 86, 0.663);
     margin: 1em auto;
     height: 3.2em;
-    background-color: white;
     -webkit-box-shadow: 0px 0px 2px 1px rgba(88, 86, 86, 0.46);
     -moz-box-shadow: 0px 0px 2px 1px rgba(88, 86, 86, 0.46);
     box-shadow: 0px 0px 2px 1px rgba(88, 86, 86, 0.46);
@@ -28,11 +27,6 @@ form {
     background-color: whitesmoke; 
 }
 
-.form-group{
-    
-}
-
-
 
 
 .container-inputs{
@@ -43,25 +37,31 @@ form {
 
 
 .btn-primary{
-    background-color: red;
+    background-color: rgb(215, 17, 17);
     border:none;
     font-weight: 700;
+    border-radius: 0.2em;
 }
 
 .btn-primary:hover {
-    background-color: rgb(173, 8, 8);
+    background-color: rgb(135, 6, 6);
     transition: 0.5s;
 }
 
+
 .btn {
-    height: auto;
-    width: 40vh;
+    font-size: 18px;
+    font-weight: 700;
+    height: 5vh;
+    width: 30vh;
 }
 
-
-#container-form form p{
+#container-form{
+    background-color: whitesmoke;
+}
+#container-form form #titulo-cadastrar{
     font-size: 30px;
-    padding-left: 3%;
+    padding-left: 1%;
 }
 
 #topicos{
@@ -69,7 +69,6 @@ form {
 }
 
 .container-fluid{
-    background-color: aliceblue;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 100%;
@@ -90,4 +89,8 @@ form {
     justify-content: start;
     padding-top: 2%;
     font-weight: 800;
+}
+
+hr{
+    margin-top: 3%!important;
 }

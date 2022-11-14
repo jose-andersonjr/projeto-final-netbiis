@@ -16,7 +16,7 @@
             <div class="col-xl-5" id="container-imagem"></div>
             <div class="col-xl-7" id="container-form">
                 <form action="." class="d-block">
-                    <p class="pb-3 pt-4 row">Cadastrar</p>
+                    <div class="pb-3 pt-4 row" id="titulo-cadastrar">Cadastrar</div>
                     
                     <div class="row container-inputs">
                         <hr>
@@ -75,14 +75,16 @@
                         </div>
                         <div class="form-group col-6">
                             <label for="password">Confirmar senha</label>
-                            <input type="password" class="form-control" name="password" placeholder="Confirme sua senha">
+                            <input type="password" class="form-control" name="password" placeholder="Insira novamente sua senha">
                         </div>
                         <!-- <div id="topicos">Endereço - Implementar a API do CEP autocomplete</div> -->            
-                        <div class="row d-flex justify-content-center">
-                            <input type="submit" class="btn btn-primary mt-5" name="acao" value="Cadastre-se" id="cadastrar">
-                        </div>                  
                         
-                        <a href="login.html">Já possui cadastro? Entrar</a><br>  
+                        <div class="row d-flex justify-content-center">
+                        
+                            <a href="login.html"><input class="btn btn-primary mt-5" name="acao" value="Finalizar cadastro" id="cadastrar"></a>
+                        </div>                  
+                        <div class="row mt-3 mb-4"><a href="login.html">Já possui cadastro? Entrar</a></div>
+                         
                     </div>    
                 </form>
             </div>
