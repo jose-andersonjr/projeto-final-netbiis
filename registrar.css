@@ -1,41 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap%27');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Montserrat', sans-serif; */
-    font-family: Helvetica;
-    font-weight: 600;
+    font-weight: 900;
 }
 
-input {
+.form-control {
+    border: 1px solid rgba(88, 86, 86, 0.663);
     margin: 1em auto;
-    width: 90%!important;
     height: 3.2em;
-    border: 1px solid black!;
     background-color: white;
-    -webkit-box-shadow: 0px 0px 2px 1px rgba(44, 44, 44, 0.315);
-    -moz-box-shadow: 0px 0px 2px 1px rgba(44, 44, 44, 0.315);
-    box-shadow: 0px 0px 2px 1px rgba(119, 73, 73, 0.315);
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(88, 86, 86, 0.46);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(88, 86, 86, 0.46);
+    box-shadow: 0px 0px 2px 1px rgba(88, 86, 86, 0.46);
 }
 
 form {
     /* border-radius: 1.5em; */
-    padding: 2em 0em;
+    padding: 0 5%;
     display: flex;
     text-align: center;
-    -webkit-box-shadow: 0px 0px 12px -3px rgba(0, 0, 0, 0.514);
+    /* -webkit-box-shadow: 0px 0px 12px -3px rgba(0, 0, 0, 0.514);
     -moz-box-shadow: 0px 0px 12px -3px rgba(0, 0, 0, 0.473);
-    box-shadow: 0px 0px 12px -3px rgba(0, 0, 0, 0.425);
-    background-color: whitesmoke;
+    box-shadow: 0px 0px 12px -3px rgba(0, 0, 0, 0.425);*/
+    background-color: whitesmoke; 
 }
 
 .form-group{
-    margin: 0 0;
-}
-.container-form{
-    margin: 3em 2em;
     
 }
+
+
+
 
 .container-inputs{
     display: flex;
@@ -55,17 +53,15 @@ form {
     transition: 0.5s;
 }
 
-
 .btn {
-    margin-top: 0;
+    height: auto;
+    width: 40vh;
 }
 
 
-
-.form-control{
-
-    border-color: rgba(0, 0, 0, 0.096);
-
+#container-form form p{
+    font-size: 30px;
+    padding-left: 3%;
 }
 
 #topicos{
@@ -76,12 +72,22 @@ form {
     background-color: aliceblue;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     height: 100%;
     width: 100%;
 }
 
-#pdados{
-    font-weight: 750;
+
+#container-imagem{
+    background-color: rgba(207, 45, 45, 0.637);
+    background-image: url("img/imagem-registrar.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+ 
 }
 
+.form-group label{
+    display: flex;
+    justify-content: start;
+    padding-top: 2%;
+    font-weight: 800;
+}
