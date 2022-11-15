@@ -13,7 +13,7 @@
     <script src="home.js" defer></script>
 </head>
 <body>
-    <div class="container-fluid" id="container-pagina">
+    <div class="row container-fluid" id="container-pagina">
         <div id="container-capa" class="col-12">
             <div class="row d-flex justify-content-center container-logo">
                 <img src="img/logo-wasabiapp.png" id="logo-wasabiapp" alt="">
@@ -60,15 +60,20 @@
                     <p>Nome do produto<br>R$99,99</p>
                 </div>
             </div> -->
-            <div class="row container-conteudo ">
+            <div class="row container-conteudo">
                 <div class="col-xl-9 col-sm-12 container-cardapio-principal ">
                     <div class="row container-cardapio-conteudo">
                         <div class="row container-cardapio-produtos">
                             <div class="row pt-3">
                                 <div class="col-xl-8 col-sm-12 " id="hyperlink-categoria">PROMOÇÃO | HOLLWASABI | TEMAKI | ENTRADAS</div>
-                                <div class="campo-pesquisar col-xl-4 col-sm-12">
-                                    <input type="text" placeholder="Pesquisar...">
-                                </div>
+                                <div class="form-group col-xl-4 campo-pesquisar">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      name="pesquisar-produto"
+                                      placeholder="Buscar produto..."
+                                    />
+                                  </div>
                             </div>
                         
                             <div class="row d-flex justify-content-start texto-categoria"><li>PROMOÇÕES</li> </div>
@@ -455,39 +460,85 @@
                     </div>
                     
                 </div>
-                <div class="col-xl-3 col-sm-12 ">
+                <div class="col-xl-3 col-sm-12 container-carrinho-principal">
                     <div class="row container-carrinho">
-                        <div class="col-12 container carrinho">
-                            <div class="row titulo-carrinho">
-                                <p>LISTA DE PEDIDOS</p>
+                        <div class="col-12 container-conteudo-carrinho">
+                            <div id="titulo-carrinho">Pedido</div>
+                        <hr/>
+                        <div class="listapedido">
+                            <div class="itembloco">
+                            <li class="itemtitle">Camarão Empanado</li>
+                            <div class="iteminfo">
+                                <li>Quantidade: 2</li>
+                                <li>Preço: R$ 109,99</li>
                             </div>
-                            <div class="lista-pedidos">
-                                <div class="col-12 row pb-3">
-                                    <p>PEDIDO 1</p>
-                                </div>
-                                <div class="col-12 row pb-3">
-                                    <p>PEDIDO 1</p>
-                                </div>
-                                <div class="col-12 row pb-3">
-                                    <p>PEDIDO 1</p>
-                                </div>
-                                <div class="col-12 row pb-3">
-                                    <p>PEDIDO 1</p>
-                                </div>
-                                <div class="col-12 row pb-3">
-                                    <p>PEDIDO 1</p>
-                                </div>
-                                <div class="col-12 row pb-3">
-                                    <p>PEDIDO 1</p>
-                                </div>
-                                <div class="col-12 row pb-3">
-                                    <p>PEDIDO 1</p>
-                                </div>
-
+                            <div class="itembtnset">
+                                <button class="itembtn"><span>Alterar </span></button>
+                                <button class="itembtn"><span>Remover </span></button>
                             </div>
-                            <div class="">VALOR TOTAL</div>
-
-                            
+                            </div>
+                            <div class="itembloco">
+                            <li class="itemtitle">Combo Promo 01 (15 Peças)</li>
+                            <div class="iteminfo">
+                                <li>Quantidade: 1</li>
+                                <li>Preço: R$ 71,99</li>
+                            </div>
+                            <div class="itembtnset">
+                                <button class="itembtn"><span>Alterar </span></button>
+                                <button class="itembtn"><span>Remover </span></button>
+                            </div>
+                            </div>
+                            <div class="itembloco">
+                            <li class="itemtitle">Gunkan 5 unidades</li>
+                            <div class="iteminfo">
+                                <li>Quantidade: 2</li>
+                                <li>Preço: R$ 80,99</li>
+                            </div>
+                            <div class="itembtnset">
+                                <button class="itembtn"><span>Alterar </span></button>
+                                <button class="itembtn"><span>Remover </span></button>
+                            </div>
+                            </div>
+                            <div class="itembloco">
+                            <li class="itemtitle">Gunkan 5 unidades</li>
+                            <div class="iteminfo">
+                                <li>Quantidade: 2</li>
+                                <li>Preço: R$ 80,99</li>
+                            </div>
+                            <div class="itembtnset">
+                                <button class="itembtn"><span>Alterar </span></button>
+                                <button class="itembtn"><span>Remover </span></button>
+                            </div>
+                            </div>
+                            <div class="itembloco">
+                            <li class="itemtitle">Gunkan 5 unidades</li>
+                            <div class="iteminfo">
+                                <li>Quantidade: 2</li>
+                                <li>Preço: R$ 80,99</li>
+                            </div>
+                            <div class="itembtnset">
+                                <button class="itembtn"><span>Alterar </span></button>
+                                <button class="itembtn"><span>Remover </span></button>
+                            </div>
+                            </div>
+                            <div class="itembloco">
+                            <li class="itemtitle">Gunkan 5 unidades</li>
+                            <div class="iteminfo">
+                                <li>Quantidade: 2</li>
+                                <li>Preço: R$ 80,99</li>
+                            </div>
+                            <div class="itembtnset">
+                                <button class="itembtn"><span>Alterar </span></button>
+                                <button class="itembtn"><span>Remover </span></button>
+                            </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="descricao-pedido">
+                            <div>Taxa de entrega: R$10,00</div>
+                            <div>Total: R$ XXX,XX</div>
+                        </div>
+                        <button class="pagamentobtn">Ir ao pagamento</button>
                         </div>
                     </div>
                 </div>        
