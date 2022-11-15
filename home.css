@@ -67,6 +67,7 @@
   
   .container-card-produto {
     padding: 1% 2%;
+
   }
   
   .container-conteudo{
@@ -75,12 +76,24 @@
     background-color: whitesmoke;
 
   }
-  
+
+  /* p {
+    max-width: 40ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } */
   .card-produto {
+    cursor: pointer;
+    border-radius: 5px;
     background-color: white;
-    -webkit-box-shadow: 0px 0px 1px 1px rgba(83, 83, 83, 0.315);
-    -moz-box-shadow: 0px 0px 1px 1px rgba(83, 83, 83, 0.315);
-    box-shadow: 0px 0px 1px 1px rgba(83, 83, 83, 0.315);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(44, 73, 73, 0.315);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(44, 73, 73, 0.315);
+    box-shadow: 0px 0px 8px 2px rgba(44, 73, 73, 0.315);
+  }
+
+  .texto-produto{
+    padding:2% 1.5% 1.5% 2%;
   }
   
   .texto-categoria {
@@ -95,17 +108,17 @@
     position: sticky;
     top: 1em;
     background: white;
-    -webkit-box-shadow: 0px 0px 5px 2px rgba(44, 73, 73, 0.186);
-    -moz-box-shadow: 0px 0px 5px 2px rgba(44, 73, 73, 0.186);
-    box-shadow: 0px 0px 5px 2px rgba(44, 73, 73,  0.315);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(44, 73, 73, 0.315);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(44, 73, 73, 0.315);
+    box-shadow: 0px 0px 8px 2px rgba(44, 73, 73, 0.315);
 
   }
 
   .container-cardapio-conteudo{
     background-color: white;
-    -webkit-box-shadow: 0px 0px 5px 2px rgba(44, 73, 73, 0.186);
-    -moz-box-shadow: 0px 0px 5px 2px rgba(44, 73, 73, 0.186);
-    box-shadow: 0px 0px 3px 2px rgba(44, 73, 73, 0.315);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(44, 73, 73, 0.315);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(44, 73, 73, 0.315);
+    box-shadow: 0px 0px 8px 2px rgba(44, 73, 73, 0.315);
   }
   
   .campo-pesquisar{
@@ -114,22 +127,21 @@
     padding: 0 0 0 0;
   } 
 
-  .campo-pesquisar input{
-    width: 70%;
-  }
+
   
   .imagem-produto img {
-    width: 19vh;
-    height: 14vh;
+    width: 20vh;
+    height: 17vh;
     margin: auto;
     float: right;
-    border-radius: 2px;
+    border-radius: 0px 5px 5px 0px;
+
   }
-  
-  .imagem-produto {
-    padding: 1% 1%;
+
+  .imagem-produto{
+    padding-right: 0%;
   }
-  
+
   .descricao-produto {
     font-size: 14px;
   }

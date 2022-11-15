@@ -54,13 +54,7 @@ form {
 }
 
 #container-form {
-  position: relative;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 40%;
-  width: 60%;
-  background-color: whitesmoke;
+  padding: 0;
 }
 
 #container-form form #titulo-cadastrar {
@@ -83,17 +77,16 @@ form {
   width: 100%;
 }
 
-#container-imagem {
-  overflow-y: hidden;
-  position: fixed;
+#container-imagem img {
   top: 0;
-  bottom: 0;
-  right: 60%;
-  left: 0;
-  background-color: rgba(207, 45, 45, 0.637);
-  background-image: url('img/imagem-registrar.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
+  position: sticky;
+  height: 100vh;
+  width: 100%;
+}
+
+#container-imagem {
+  padding: 0 0 0 0 !important;
+  
 }
 
 .form-group label {

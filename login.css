@@ -14,7 +14,6 @@ body {
 form {
   padding-top: 10vh;
   width: 85%;
-
   /* border-radius: 1.5em; */
   display: flex;
   justify-content: center;
@@ -106,10 +105,7 @@ button a:hover {
   padding-top: 1.5em;
   font-size: large;
 }
-/* .container {
-    background: #FFFFFF url("img/logo-topo.jpg") no-repeat right top fixed;
-    background-size: 10em;
-} */
+
 
 #logo-wasabiapp {
   margin-top: 2em;
@@ -130,7 +126,4 @@ button a:hover {
   padding: 0 0 0 0 !important;
 }
 
-/* centralizar os inputs e com o cadastre-se 
- hoover no cadastre-se
- 
- IMPLEMENTAR O JAVASCRIPT NO API CEP*/
+
