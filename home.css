@@ -4,130 +4,131 @@
     box-sizing: border-box;
     /* font-family: 'Montserrat', sans-serif; */
     font-family: Helvetica;
-    
 
-}
+  }
 
-body{
-    background-color: #F0EBEE;
-}
 
-#logo-wasabiapp{
-    margin-top: 5%;
-    width: 10em;
+#logo-wasabiapp {
+    margin-top: 20%;
+    width: 12em;
     height: auto;
     background-color: whitesmoke;
-    border-radius: 10%;
-
-}
-
-#container-principal{
+  }
+  
+  #container-principal {
     background-color: whitesmoke;
     margin: auto;
     height: 100%;
     width: 100%;
-   
-}
-
-.card-carrosel{
+  }
+  
+  .card-carrosel {
     height: 100%;
     margin-top: 0.5em;
-}
-
-.produto-carrosel img{
+  }
+  
+  .produto-carrosel img {
     width: 80%;
     height: 100%;
-}
-
-#carrosel-produtos{
+  }
+  
+  #carrosel-produtos {
     background-color: white;
-    height: auto;    
-}
-
-#container-pagina{
-    background-color: rgba(207, 45, 45, 0.637);
+    height: auto;
+  }
+  
+  #container-pagina {
+    margin: 0% 0% 0% 0%!important;
+    background-color: whitesmoke;
     background-position: center top;
-    background-image: url("img/topo-home.jpg");
-    background-size: 100%;
+    background-image: url('img/topo-home.jpg');
+    background-size: 100% 16.5%;
     background-repeat: no-repeat;
- 
-
-    
-}
-
-.container-card-produto{
+  }
+  
+  .container-card-produto {
     padding: 1% 2%;
-}
+  }
+  
+  .container-conteudo{
+    padding: 1% 1% 1% 1%;
+    background-color: whitesmoke;
 
-.card-produto{
+  }
+  
+  .card-produto {
     background-color: white;
-    border-radius: 5px;
     -webkit-box-shadow: 0px 0px 1px 1px rgba(83, 83, 83, 0.315);
     -moz-box-shadow: 0px 0px 1px 1px rgba(83, 83, 83, 0.315);
     box-shadow: 0px 0px 1px 1px rgba(83, 83, 83, 0.315);
-}
-
-.texto-categoria{
+  }
+  
+  .texto-categoria {
+    padding-top: 2%;
     margin-left: 0.1%;
     font-weight: 500;
     font-size: 130%;
-}
-
-.container-carrinho{
-    margin: 1em;
+  }
+  
+  .container-carrinho {
+    margin-left: 1%;
     position: sticky;
     top: 1em;
     height: 30em;
+    background: white;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(44, 44, 44, 0.315);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(44, 44, 44, 0.315);
+    box-shadow: 0px 0px 2px 1px rgba(119, 73, 73, 0.315);
+
+  }
+
+  .container-cardapio-conteudo{
     background-color: white;
     -webkit-box-shadow: 0px 0px 2px 1px rgba(44, 44, 44, 0.315);
     -moz-box-shadow: 0px 0px 2px 1px rgba(44, 44, 44, 0.315);
     box-shadow: 0px 0px 2px 1px rgba(119, 73, 73, 0.315);
-}
-
-.campo-pesquisar{
+  }
+  
+  .campo-pesquisar {
     display: flex;
     justify-content: end;
-}
-
-.campo-pesquisar input{
-    width:70%;
-}
-
-.imagem-produto img{
+  }
+  
+  .campo-pesquisar input {
+    width: 70%;
+  }
+  
+  .imagem-produto img {
     width: 19vh;
     height: 14vh;
     margin: auto;
     float: right;
     border-radius: 2px;
-}
-
-.imagem-produto{
+  }
+  
+  .imagem-produto {
     padding: 1% 1%;
-    
-}
-
-.descricao-produto{
+  }
+  
+  .descricao-produto {
     font-size: 14px;
-}
+  }
 
-.container-logo{
-    background-color: rgba(0, 0, 0, 0);
-}
-
-footer{
+  
+  footer {
     color: whitesmoke;
     background-color: rgb(16, 14, 14);
     height: 10vh;
-}
-
-.titulo-carrinho p{
+  }
+  
+  .titulo-carrinho p {
     font-weight: 600;
     font-size: 150%;
     text-align: center;
-}
-
-#hyperlink-categoria{
+  }
+  
+  #hyperlink-categoria {
     padding-left: 1%;
     font-size: 120%;
     font-weight: 400;
-}
+  }
