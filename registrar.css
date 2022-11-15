@@ -53,6 +53,10 @@ form {
   width: 30vh;
 }
 
+#btn-cadastrar:disabled {
+  background: #7a7878;
+}
+
 #container-form {
   padding: 0;
 }

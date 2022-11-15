@@ -1,3 +1,36 @@
+// =========================== VALIDADOR DE SENHA ========================================= //
+const inputSenha = document.querySelector('#senha')
+const inputConfirmarSenha = document.querySelector('#confirmarSenha')
+const botaoCadastrar = document.querySelector('#btn-cadastrar')
+
+inputConfirmarSenha.addEventListener('keyup', () => {
+    validarSenha()
+})
+
+inputSenha.addEventListener('keyup', () => {
+    validarSenha()
+})
+
+
+function validarSenha(){
+    let senha = inputSenha.value
+    let confirmarSenha = inputConfirmarSenha.value
+    if((confirmarSenha.length === 6) && (senha.length === 6)){
+        if(senha !== confirmarSenha){
+            botaoCadastrar.setAttribute("disabled", "disabled")
+            alert("As senhas não correspondem")
+        }else{
+            botaoCadastrar.removeAttribute("disabled")
+        }
+    }
+}
+
+botaoCadastrar.addEventListener('mouseenter', () => {
+    validarSenha()
+})
+
+// ===================================================================================== //
+
 // =========================== AUTOCOMPLETE CPF ========================================= //
 
 const inputCEP = document.querySelector('#cep')
@@ -39,9 +72,9 @@ const getAddress = async (cep) => {
     const data = await response.json()
 
     if (data.erro) {
-        alert("CEP inválido, valor insira o CEP corretamente!")
+        alert("CEP inválido, favor insira o CEP corretamente!")
     }else{
-        inputCidade.value = data.cidade
+        inputCidade.value = data.localidade
         inputBairro.value = data.bairro
         inputLogradouro.value = data.logradouro
     }
