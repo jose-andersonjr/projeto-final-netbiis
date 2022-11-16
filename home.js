@@ -18,20 +18,51 @@ function scrollHoll(e) {
     catHoll.scrollIntoView(true);
 }
 
-const switchModal = () => {
-    const modal = document.querySelector('.modal')
-    const actualStyle = modal.style.display
-    if(actualStyle == 'block') {
-      modal.style.display = 'none'
-    }
-    else {
-      modal.style.display = 'block'
-    }
-  }
+// ================================ MODAL ================================ 
+const modal = document.querySelector('.container-modal')
 
+const switchModal = () => {
+
+  const actualStyle = modal.style.display
+  if(actualStyle == 'block') {
+    modal.style.display = 'none'
+
+  }
+  else {
+    modal.style.display = 'block'
+  }
+}
   window.onclick = function(event) {
-    const modal = document.querySelector('.modal')
   if (event.target == modal) {
     switchModal()
   }
+}
+
+// Descobrir pq a função está roubando a imagem para colocar no modal
+// Pegar cada elemento da div card-produto referenciando a div que foi clicada, com isso uso as imagens e a descrição do produto que foi clicado, 
+// porém, preciso limpar os dados que foram colocados após os produtos serem adicionados
+
+var cardsProdutos = document.getElementsByClassName('card-produto')
+for(let i=0; i<cardsProdutos.length; i++){
+  cardsProdutos[i].addEventListener('click', function(event) {
+
+    const imagemModal = document.querySelector('.container-imagem-modal')
+    let cardProduto = event.currentTarget
+    let imagem = cardProduto.querySelector('.imagem-produto')
+    modal.append(imagem)
+    switchModal()
+  }, false)
+}
+
+// ======================================================================= 
+
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "20%";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
 }

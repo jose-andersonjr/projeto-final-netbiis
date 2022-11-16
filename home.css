@@ -65,6 +65,7 @@
 
 .container-card-produto {
   padding: 1% 2%;
+
 }
 
 .container-conteudo {
@@ -120,8 +121,10 @@
 }
 
 .imagem-produto img {
-  width: 20vh;
-  height: 17vh;
+  max-width: 20vh;
+  min-width: 20vh;
+  max-height: 17vh;
+  min-height: 17vh;
   float: right;
   border-radius: 0px 5px 5px 0px;
 }
@@ -168,9 +171,8 @@ footer {
 }
 
 .listapedido {
-  /* background-color: white; */
   list-style: none;
-  padding: 20px;
+  padding: 7.2%;
   color: rgb(116, 124, 142);
   font-size: 16px;
   overflow: auto;
@@ -205,7 +207,6 @@ footer {
 }
 
 .itembtnset {
-  /* display: inline;*/
   margin-top: 2ex;
   display: flex;
   flex-direction: row;
@@ -257,7 +258,9 @@ footer {
 
 }
 
-.modal {
+/* MODAL */
+
+.container-modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -269,7 +272,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal .content {
+.container-modal .conteudo-modal {
   background-color: #d3d3d3;
   margin: 15% auto;
   padding: 20px;
@@ -282,4 +285,69 @@ footer {
 
   font-family: 'LexendDeca-Regular';
   color: var(--title);
+}
+
+img#wasabi-logo-drawer {
+  height: 20%;
+}
+
+.btn-float {
+  position: absolute;
+  top: 0;
+  margin-top: 20px;
+  left: 0;
+  margin-left: 20px;
+  width: 3%;
+  height: 5%;
+  bottom: 40px;
+  right: 40px;
+  background-color: whitesmoke;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.btn-float:hover {
+ transition: 0.3s;
+ background-color: rgba(215, 207, 207, 0.758);
+}
+
+button i {
+  color: black;
+  font-size: x-large;
+}
+
+.sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 2; 
+  top: 0; 
+  left: 0;
+  background-color: white;
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #151414c8;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #7a6f6f70;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
