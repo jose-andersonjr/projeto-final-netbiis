@@ -1,19 +1,19 @@
-function scrollPromocao(e) {
+function scrollPromocao() {
     let catPromocao = document.querySelector("div#cat-promocao");
     catPromocao.scrollIntoView(true);
 }
 
-function scrollEntradas(e) {
+function scrollEntradas() {
     let catEntradas = document.querySelector("div#cat-entradas");
     catEntradas.scrollIntoView(true);
 }
 
-function scrollTemaki(e) {
+function scrollTemaki() {
     var catTemaki = document.querySelector("div#cat-temaki");
     catTemaki.scrollIntoView(true);
 }
 
-function scrollHoll(e) {
+function scrollHoll() {
     var catHoll = document.querySelector("div#cat-holl");
     catHoll.scrollIntoView(true);
 }
@@ -55,14 +55,18 @@ for(let i=0; i<cardsProdutos.length; i++){
 }
 
 // ======================================================================= 
+/////////////////////////// gaveta lateral /////////////////////////////////
+const pagina = document.querySelector('#container-pagina')
+const sideNav = document.getElementById('mySidenav')
 
-
-/* Set the width of the side navigation to 250px */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "20%";
+  sideNav.style.width = '18rem'
+  pagina.classList.add('dimmer')
 }
 
-/* Set the width of the side navigation to 0 */
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
+    sideNav.style.width = '0'
+    pagina.classList.remove('dimmer')
+  }
+
+///////////////////////////////////////////////////////////////////////////////////////

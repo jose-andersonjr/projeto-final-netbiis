@@ -36,21 +36,31 @@
   </head>
   <body>
     <button class="btn-float" onclick="openNav()">
-      <i class="bi bi-person-fill"></i>
+      <i class="bi bi-list"></i>
     </button>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
         >&times;</a
       >
-      <img id="wasabi-logo-drawer" src="img/logo-wasabiapp.png" alt="logo_wasabi_sushi.png" />
-      <a href="#">Meu perfil</a>
-      <a href="#">Meus pedidos</a>
-      <a href="#">Sair da conta</a>
+      <img 
+        id="wasabi-logo-drawer" 
+        src="img/logo-wasabiapp.png" 
+        alt="logo_wasabi_sushi.png" 
+      />
+      <div id="div-boas-vindas">
+        <p>Seja bem-vindo(a) "nome_cliente"</p>
+      </div>
+      <div class="btns-gaveta">
+        <a href="home.html">Home<i style="float: right" class="bi bi-house"></i> </a>
+        <a href="#">Meu perfil<i style="float: right;" class="bi bi-person-circle"></i></a>
+        <a href="meuspedidos.html">Meus pedidos<i style="float: right;" class="bi bi-list-task"></i></a>
+        <a id="btn-sair" href="login.html">Sair da conta<i style="float: right;" class="bi bi-box-arrow-right"></i></a>
+      </div>
     </div>
-    <div class="row container-fluid" id="container-pagina">
+    <div class="row container-fluid" id="container-pagina" onclick="closeNav()">
       <div id="container-capa" class="col-12">
         <div class="row d-flex justify-content-center container-logo">
-          <img src="img/logo-wasabiapp.png" id="logo-wasabiapp" alt="" />
+          
         </div>
       </div>
       <div id="container-principal" class="col-12">
@@ -109,7 +119,7 @@
           <div class="col-xl-9 col-sm-12 container-cardapio-principal">
             <div class="container-cardapio-conteudo px-5">
               <div class="row container-cardapio-produtos">
-                <div class="row pt-5">
+                <div class="row items-pesquisar">
                   <div class="col-xl-6 col-sm-12 itembtnset">
                     <button class="itembtn" onclick="scrollPromocao()">
                       Promoção
@@ -124,15 +134,17 @@
                       Holl Wasabi
                     </button>
                   </div>
-                  <div class="form-group col-xl-6 campo-pesquisar">
+                  <div class="form-group col-xl-6 campo-pesquisar">   
                     <input
                       type="text"
                       class="form-control"
                       name="pesquisar-produto"
+                      id="pesquisar-produto"
                       placeholder="Buscar produto..."
                     />
-                    <label for="pesquisar-produto"><i class="bi bi-search"></i></label>
-                  </div>
+
+                    
+                  </div> 
                 </div>
 
                 <div
@@ -677,7 +689,7 @@
     </div>
   </body>
 
-  <footer>
+  <!-- <footer>
     <p>agradecimentos, considerações e autores do site</p>
-  </footer>
+  </footer> -->
 </html>

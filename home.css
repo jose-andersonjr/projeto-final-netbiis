@@ -31,10 +31,14 @@
 }
 
 #container-principal {
-  background-color: whitesmoke;
   margin: auto;
   height: 100%;
   width: 100%;
+}
+
+.items-pesquisar{
+  padding-top: 6%;
+  padding-right: 0;
 }
 
 .card-carrosel {
@@ -53,14 +57,13 @@
 }
 
 #container-pagina {
-  padding: 0% 0.8% 0% 0.8% !important;
+  padding: 20% 0.8% 0% 0.8% !important;
   margin: 0% 0% 0% 0% !important;
-  background-color: whitesmoke;
-  background-color: whitesmoke;
   background-position: center top;
   background-image: url('img/topo-home.jpg');
-  background-size: 100% 16.5%;
+  background-size: 100%;
   background-repeat: no-repeat;
+  
 }
 
 .container-card-produto {
@@ -70,8 +73,8 @@
 
 .container-conteudo {
   display: flex;
-  justify-content: space-between;
-  background-color: whitesmoke;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .card-produto {
@@ -112,6 +115,7 @@
   -webkit-box-shadow: 0px 0px 8px 2px rgba(44, 73, 73, 0.315);
   -moz-box-shadow: 0px 0px 8px 2px rgba(44, 73, 73, 0.315);
   box-shadow: 0px 0px 8px 2px rgba(44, 73, 73, 0.315);
+  margin-bottom: 1%;
 }
 
 .campo-pesquisar {
@@ -287,10 +291,6 @@ footer {
   color: var(--title);
 }
 
-img#wasabi-logo-drawer {
-  height: 20%;
-}
-
 .btn-float {
   position: absolute;
   top: 0;
@@ -351,3 +351,135 @@ button i {
   font-size: 36px;
   margin-left: 50px;
 }
+
+
+/*============================  NOVIDADE: estilo botão floater, estilo gaveta  ======================================= */
+
+img#wasabi-logo-drawer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  display: block;
+}
+
+
+.btn-float {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 3%;
+  height: 5%;
+  bottom: 10rem;
+  right: 10rem;
+  background-color: rgb(75, 75, 75);
+  color: #fff;
+  box-shadow: rgba(47, 47, 47, 0.821) 0px 1px 4px;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.btn-float:hover {
+  transition: 0.4s;
+  background-color: rgba(215, 207, 207, 0.758);
+}
+
+button i {
+  color: rgb(197, 197, 197);
+  font-size: x-large;
+}
+
+button:hover i {
+  transition: 0.4s;
+  color: rgb(158, 158, 158);
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: white;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 27px;
+  color: #212121c8;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #7a6f6f70;
+}
+
+#btn-sair:hover {
+  color: #a11313;
+}
+
+/* ===================================================================================== */
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* =========================== dimmer de página, estilo de botoes da gaveta =================================== */
+
+.dimmer {
+  transition: 0.3s;
+  filter: brightness(50%);
+}
+
+#btn-sair {
+  color: red;
+}
+
+.btns-gaveta {
+  margin-right: 5%;
+}
+
+#div-boas-vindas {
+  display: flex;
+  margin: auto;
+
+  width: 75%;
+  height: 25%;
+  text-align: center;
+  align-items: center;
+}
+
+#div-boas-vindas p {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.container-cardapio-principal {
+  padding: 0;
+  width: 70%;
+  max-width: 100%;
+}
+
+/* =========================================================================================== */
