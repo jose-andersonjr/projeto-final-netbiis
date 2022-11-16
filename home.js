@@ -26,7 +26,11 @@ const switchModal = () => {
   const actualStyle = modal.style.display
   if(actualStyle == 'block') {
     modal.style.display = 'none'
-
+    let element = document.querySelector('.container-imagem-modal');
+    while (element.firstChild) {
+      element.removeChild(element.firstChild);
+    }
+   
   }
   else {
     modal.style.display = 'block'
@@ -45,28 +49,28 @@ const switchModal = () => {
 var cardsProdutos = document.getElementsByClassName('card-produto')
 for(let i=0; i<cardsProdutos.length; i++){
   cardsProdutos[i].addEventListener('click', function(event) {
-
-    const imagemModal = document.querySelector('.container-imagem-modal')
-    let cardProduto = event.currentTarget
-    let imagem = cardProduto.querySelector('.imagem-produto')
-    modal.append(imagem)
+    let cardProduto = event.currentTarget //div do card
+    let imagemProduto = cardProduto.querySelector('.imagem-produto')
+    let imagemProdutoClone = imagemProduto.cloneNode(true)
+    let containerImagemModal = document.querySelector('.container-imagem-modal')
+    containerImagemModal.appendChild(imagemProdutoClone)
     switchModal()
   }, false)
 }
 
 // ======================================================================= 
 /////////////////////////// gaveta lateral /////////////////////////////////
-const pagina = document.querySelector('#container-pagina')
+const pagina = document.querySelector('#container-principal')
 const sideNav = document.getElementById('mySidenav')
 
 function openNav() {
   sideNav.style.width = '18rem'
-  pagina.classList.add('dimmer')
+
 }
 
 function closeNav() {
     sideNav.style.width = '0'
-    pagina.classList.remove('dimmer')
+
   }
 
 ///////////////////////////////////////////////////////////////////////////////////////
