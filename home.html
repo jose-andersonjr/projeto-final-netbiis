@@ -12,7 +12,10 @@
       crossorigin="anonymous"
       defer
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -42,112 +45,113 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
         >&times;</a
       >
-      <img 
-        id="wasabi-logo-drawer" 
-        src="img/logo-wasabiapp.png" 
-        alt="logo_wasabi_sushi.png" 
+      <img
+        id="wasabi-logo-drawer"
+        src="img/logo-wasabiapp.png"
+        alt="logo_wasabi_sushi.png"
       />
       <div id="div-boas-vindas">
         <p>Seja bem-vindo(a) "nome_cliente"</p>
       </div>
       <div class="btns-gaveta">
-        <a href="home.html">Home<i style="float: right" class="bi bi-house"></i> </a>
-        <a href="#">Meu perfil<i style="float: right;" class="bi bi-person-circle"></i></a>
-        <a href="meuspedidos.html">Meus pedidos<i style="float: right;" class="bi bi-list-task"></i></a>
-        <a id="btn-sair" href="login.html">Sair da conta<i style="float: right;" class="bi bi-box-arrow-right"></i></a>
+        <a href="home.html" id="sidenav-home-btn"
+          >Home<i style="float: right" class="bi bi-house"></i>
+        </a>
+        <a href="#"
+          >Meu perfil<i style="float: right" class="bi bi-person-circle"></i
+        ></a>
+        <a href="meuspedidos.html"
+          >Meus pedidos<i style="float: right" class="bi bi-list-task"></i
+        ></a>
+        <a id="btn-sair" href="login.html"
+          >Sair da conta<i
+            style="float: right"
+            class="bi bi-box-arrow-right"
+          ></i
+        ></a>
       </div>
     </div>
     <div class="row container-fluid" id="container-pagina" onclick="closeNav()">
       <div id="container-capa" class="col-12">
-        <div class="row d-flex justify-content-center container-logo">
-          
-        </div>
+        <div class="row d-flex justify-content-center container-logo"></div>
       </div>
       <div id="container-principal" class="col-12">
         <!-- <div class="row text-center" id="carrosel-produtos">
                 <div class="col-xl-2 col-sm-4 col-6 card-carrosel">
                     <div class="produto-carrosel">
-                        <img src="img/produtos/promocoes/CAMARÃO_EMPANADO_5_UNIDADES.webp" alt="">
+                        <img src="img/produtos_png/promocoes/CAMARÃO_EMPANADO_5_UNIDADES.webp" alt="">
                     </div>
                     <p>Nome do produto<br>R$99,99</p>
                 </div>
                 <div class="col-xl-2 col-sm-4 col-6 card-carrosel">
                     <div class="produto-carrosel">
-                        <img src="img/produtos/promocoes/COMBO_PROMO_01_15 PEÇAS.webp" alt="">
+                        <img src="img/produtos_png/promocoes/COMBO_PROMO_01_15 PEÇAS.webp" alt="">
                     </div>
                     <p>Nome do produto<br>R$99,99</p>
                 </div>
                 <div class="col-xl-2 col-sm-4 col-6 card-carrosel">
                     <div class="produto-carrosel">
-                        <img src="img/produtos/promocoes/COMBO_PROMO_02 _15 PEÇAS.webp" alt="">
+                        <img src="img/produtos_png/promocoes/COMBO_PROMO_02 _15 PEÇAS.webp" alt="">
                     </div>
                     <p>Nome do produto<br>R$99,99</p>
                 </div>
                 <div class="col-xl-2 col-sm-4 col-6 card-carrosel">
                     <div class="produto-carrosel">
-                        <img src="img/produtos/promocoes/COMBO_PROMO_03_15 PEÇAS.webp" alt="">
+                        <img src="img/produtos_png/promocoes/COMBO_PROMO_03_15 PEÇAS.webp" alt="">
                     </div>
                     <p>Nome do produto<br>R$99,99</p>
                 </div>
                 <div class="col-xl-2 col-sm-4 col-6 card-carrosel">
                     <div class="produto-carrosel">
-                        <img src="img/produtos/promocoes/COMBO_PROMO_6_15 PEÇAS.webp" alt="">
+                        <img src="img/produtos_png/promocoes/COMBO_PROMO_6_15 PEÇAS.webp" alt="">
                     </div>
                     <p>Nome do produto<br>R$99,99</p>
                 </div>
                 <div class="col-xl-2 col-sm-4 col-6 card-carrosel">
                     <div class="produto-carrosel">
-                        <img src="img/produtos/promocoes/COMBO_PROMO_7_15 PEÇAS.webp" alt="">
+                        <img src="img/produtos_png/promocoes/COMBO_PROMO_7_15 PEÇAS.webp" alt="">
                     </div>
                     <p>Nome do produto<br>R$99,99</p>
                 </div>
             </div> -->
 
-            <!-- Código do modal -->
-            <div class="container-modal">
-              <div class="row conteudo-modal d-flex">
-                <div class="container-imagem-modal col-6">
-
+        <!-- Código do modal -->
+        <div class="container-modal">
+          <div class="row conteudo-modal d-flex">
+            <div class="container-imagem-modal col-6"></div>
+            <div class="container-informacoes-modal col-6">
+              <div class="container-nome-modal text-center"></div>
+              <div class="container-descricao-modal"></div>
+              <textarea
+                name="observacoes"
+                id="observacoes"
+                placeholder="Observação..."
+                maxlength="99"
+              ></textarea>
+              <div class="container-quantidade-preco-modal row">
+                <div class="col-6" id="quantidade-modal">
+                  <label for="number">Quantidade</label>
+                  <input type="number" min="1" value="1" onkeydown="return false" id="quantidade-modal"/>
                 </div>
-                <div class="container-informacoes-modal col-6">
-                  <div class="container-nome-modal text-center"></div>
-                  <div class="container-descricao-modal"></div>
-                  <textarea name="observacoes" id="observacoes" placeholder="Observação..."></textarea>
-                  <div class="container-botoes-modal">
-                    <div class="row">
-                      <div class="col-6" id="quantidade-modal">
-                        <label for="number">Quantidade</label>
-                        <input type="number" min="1" >
-                        
-                      </div>
-                      <div class="col-6">
-                        Valor unitário: '''Valor unitário'''
-                      </div>
-                      <div class="col-6">
-                        
-                      </div>
-                      
-                      <div class="col-6">
-                        Valor total: '''valor total'''
-                      </div>
-                      
-                    </div>
-                    <div class="row" id="botoes-comando">
-                      <button class="btn btn-primary mt-3" id="btn-voltar">
-                        Voltar
-                      </button>
-                      <button class="btn btn-primary mt-3" id="btn-adicionar">
-                        Adicionar
-                      </button>
-                    </div>
-                    
-                  </div>
+                <div class="col-6" id="valor-unit-modal"></div>
+                <div class="col-6"></div>
+                <div class="col-6" id="valor-total-modal">Valor total: </div>
+              </div>
+              <div class="container-botoes-modal">
+                <div class="row" id="botoes-comando">
+                  <button class="btn btn-primary mt-3" id="btn-voltar">
+                    Voltar
+                  </button>
+                  <button class="btn btn-primary mt-3" id="btn-adicionar">
+                    Adicionar
+                  </button>
                 </div>
-
               </div>
             </div>
-            <!-- encerramento do modal -->
-            
+          </div>
+        </div>
+        <!-- encerramento do modal -->
+
         <div class="row container-conteudo">
           <div class="col-xl-9 col-sm-12 container-cardapio-principal">
             <div class="container-cardapio-conteudo px-5">
@@ -167,7 +171,7 @@
                       Holl Wasabi
                     </button>
                   </div>
-                  <div class="form-group col-xl-6 campo-pesquisar">   
+                  <div class="form-group col-xl-6 campo-pesquisar">
                     <input
                       type="text"
                       class="form-control"
@@ -175,9 +179,7 @@
                       id="pesquisar-produto"
                       placeholder="Buscar produto..."
                     />
-
-                    
-                  </div> 
+                  </div>
                 </div>
 
                 <div
@@ -187,108 +189,109 @@
                   Promoção
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>Combo Promo 01 (15 Peças)</h5>
                       <p class="descricao-produto">
-                        10 Hol De Salmao Grelhado Com Batata Palha Doce, 3 Niguiris De Skin Com Maionese Wasabi, 2 Gunkans De Biscoitinh 10 Hol De Salmao Grelhado Com Batata Palha Doce, 3 Niguiris De Skin Com Maionese Wasabi, 2 Gunkans De Biscoitinho Com Geleia
-
+                        10 Hol De Salmao Grelhado Com Batata Palha Doce, 3
+                        Niguiris De Skin Com Maionese Wasabi, 2 Gunkans De
+                        Biscoitinho Com Geleia
                       </p>
-                      <p class="preco-produto">R$ 40,90</p>
+                      <span class="preco-produto">R$ 40,90</span>
                     </div>
                     <div class="imagem-produto col-4">
                       <img
-                        src="img/produtos/promocoes/CAMARÃO_EMPANADO_5_UNIDADES.webp"
+                        src="img/produtos_png/promocoes/CAMARÃO_EMPANADO_5_UNIDADES.jpg"
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
                       <img
-                        src="img/produtos/promocoes/COMBO_PROMO_01_15 PEÇAS.webp"
+                        src="img/produtos_png/promocoes/COMBO_PROMO_01_15 PEÇAS.jpg"
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
                       <img
-                        src="img/produtos/promocoes/COMBO_PROMO_02 _15 PEÇAS.webp"
+                        src="img/produtos_png/promocoes/COMBO_PROMO_02 _15 PEÇAS.jpg"
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
                       <img
-                        src="img/produtos/promocoes/COMBO_PROMO_03_15 PEÇAS.webp"
+                        src="img/produtos_png/promocoes/COMBO_PROMO_03_15 PEÇAS.jpg"
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
                       <img
-                        src="img/produtos/promocoes/COMBO_PROMO_6_15 PEÇAS.webp"
+                        src="img/produtos_png/promocoes/COMBO_PROMO_6_15 PEÇAS.jpg"
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
                       <img
-                        src="img/produtos/promocoes/COMBO_PROMO_7_15 PEÇAS.webp"
+                        src="img/produtos_png/promocoes/COMBO_PROMO_7_15 PEÇAS.jpg"
                         alt=""
                       />
                     </div>
@@ -304,104 +307,107 @@
                   Entradas
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
                       <img
-                        src="img/produtos/entradas/BOLINHAS_DE_SALMÃO_FRITAS.webp"
+                        src="img/produtos_png/entradas/BOLINHAS_DE_SALMÃO_FRITAS.jpg"
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
                       <img
-                        src="img/produtos/entradas/GUIOZA_5_UNIDADES.webp"
+                        src="img/produtos_png/entradas/GUIOZA_5_UNIDADES.jpg"
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
                       <img
-                        src="img/produtos/entradas/HOLL_TARTAR_DE_SALMÃO.webp"
+                        src="img/produtos_png/entradas/HOLL_TARTAR_DE_SALMÃO.jpg"
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
-                      <img src="img/produtos/entradas/KASAI.webp" alt="" />
+                      <img src="img/produtos_png/entradas/KASAI.jpg" alt="" />
                     </div>
                   </div>
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
                       <img
-                        src="img/produtos/entradas/LULA_EM_ANÉIS_GRELHADA.webp"
+                        src="img/produtos_png/entradas/LULA_EM_ANÉIS_GRELHADA.jpg"
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
-                      <img src="img/produtos/entradas/MEGASABI.webp" alt="" />
+                      <img
+                        src="img/produtos_png/entradas/MEGASABI.jpg"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
@@ -415,102 +421,105 @@
                   Temaki Especial
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
                       <img
-                        src="img/produtos/temaki/PROMO_VEGANO_ 15_PEÇAS.webp"
+                        src="img/produtos_png/temaki/PROMO_VEGANO_ 15_PEÇAS.jpg"
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
-                      <img src="img/produtos/temaki/SKINMAKI.webp" alt="" />
+                      <img src="img/produtos_png/temaki/SKINMAKI.jpg" alt="" />
                     </div>
                   </div>
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
                       <img
-                        src="img/produtos/temaki/TEMAKI_EXOTIC.webp"
+                        src="img/produtos_png/temaki/TEMAKI_EXOTIC.jpg"
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
-                    </div>
-                    <div class="imagem-produto col-4">
-                      <img src="img/produtos/temaki/TEMAKI_PORÓ.webp" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
-                    <div class="texto-produto col">
-                      <h5>NOME DO PRODUTO</h5>
-                      <p class="descricao-produto">
-                        Descrição Descrição Descrição Descrição Descrição
-                        Descrição Descrição Descrição
-                      </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
                       <img
-                        src="img/produtos/temaki/TEMAKI_SALMÃO_ESPECIAL.webp"
+                        src="img/produtos_png/temaki/TEMAKI_PORÓ.jpg"
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
                       <img
-                        src="img/produtos/temaki/TEMAKI_WASABI_ESPECIAL.webp"
+                        src="img/produtos_png/temaki/TEMAKI_SALMÃO_ESPECIAL.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="container-card-produto col-xl-6 col-sm-12">
+                  <div class="row card-produto">
+                    <div class="texto-produto col">
+                      <h5>NOME DO PRODUTO</h5>
+                      <p class="descricao-produto">
+                        Descrição Descrição Descrição Descrição Descrição
+                        Descrição Descrição Descrição
+                      </p>
+                      <span class="preco-produto">R$ 99,99</span>
+                    </div>
+                    <div class="imagem-produto col-4">
+                      <img
+                        src="img/produtos_png/temaki/TEMAKI_WASABI_ESPECIAL.jpg"
                         alt=""
                       />
                     </div>
@@ -526,108 +535,108 @@
                   Holl Wasabi
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
                       <img
-                        src="img/produtos/wasabiholl/PATINHAS_DE_CARANGUEJO.webp"
+                        src="img/produtos_png/wasabiholl/PATINHAS_DE_CARANGUEJO.jpg"
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
                       <img
-                        src="img/produtos/wasabiholl/MISSOSHIRU.webp"
+                        src="img/produtos_png/wasabiholl/MISSOSHIRU.jpg"
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
                       <img
-                        src="img/produtos/wasabiholl/WASABI_ESPECIAL.webp"
+                        src="img/produtos_png/wasabiholl/WASABI_ESPECIAL.jpg"
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
                       <img
-                        src="img/produtos/wasabiholl/SALMÃO_EM_CONSUMER.webp"
+                        src="img/produtos_png/wasabiholl/SALMÃO_EM_CONSUMER.jpg"
                         alt=""
                       />
                     </div>
                   </div>
                 </div>
-                <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                <!-- <div class="container-card-produto col-xl-6 col-sm-12">
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
                       <img
-                        src="img/produtos/wasabiholl/logo-wasabiapp.png"
+                        src="img/produtos_png/wasabiholl/logo-wasabiapp.png"
                         alt=""
                       />
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <div class="container-card-produto col-xl-6 col-sm-12">
-                  <div class="row card-produto" >
+                  <div class="row card-produto">
                     <div class="texto-produto col">
                       <h5>NOME DO PRODUTO</h5>
                       <p class="descricao-produto">
                         Descrição Descrição Descrição Descrição Descrição
                         Descrição Descrição Descrição
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <span class="preco-produto">R$ 99,99</span>
                     </div>
                     <div class="imagem-produto col-4">
                       <img
-                        src="img/produtos/wasabiholl/WASABI_HOLL.webp"
+                        src="img/produtos_png/wasabiholl/WASABI_HOLL.jpg"
                         alt=""
                       />
                     </div>
@@ -637,91 +646,100 @@
             </div>
           </div>
           <div class="col-xl-3 col-sm-12 container-principal-carrinho">
-              <div class="col-12 container-conteudo-carrinho">
-                <div id="titulo-carrinho">Pedido</div>
-                <hr />
-                <div class="listapedido">
-                  <div class="itembloco">
-                    <li class="itemtitle">Camarão Empanado</li>
-                    <div class="iteminfo">
-                      <li>Quantidade: 2</li>
-                      <li>Preço: R$ 109,99</li>
-                    </div>
-                    <div class="itembtnset">
-                      <button class="itembtn"><span>Alterar </span></button>
-                      <button class="itembtn"><span>Remover </span></button>
-                    </div>
+            <div class="col-12 container-conteudo-carrinho">
+              <div id="titulo-carrinho">Pedido</div>
+              <hr />
+              <div class="listapedido">
+                <div class="itembloco" style="border: solid 1px black;">
+                  <li class="itemtitle"></li>
+                  <div class="iteminfo">
+                    <li id="itemquantidade"></li>
+                    <li id="itempreco"></li>
                   </div>
-                  <div class="itembloco">
-                    <li class="itemtitle">Combo Promo 01 (15 Peças)</li>
-                    <div class="iteminfo">
-                      <li>Quantidade: 1</li>
-                      <li>Preço: R$ 71,99</li>
-                    </div>
-                    <div class="itembtnset">
-                      <button class="itembtn"><span>Alterar </span></button>
-                      <button class="itembtn"><span>Remover </span></button>
-                    </div>
-                  </div>
-                  <div class="itembloco">
-                    <li class="itemtitle">Gunkan 5 unidades</li>
-                    <div class="iteminfo">
-                      <li>Quantidade: 2</li>
-                      <li>Preço: R$ 80,99</li>
-                    </div>
-                    <div class="itembtnset">
-                      <button class="itembtn"><span>Alterar </span></button>
-                      <button class="itembtn"><span>Remover </span></button>
-                    </div>
-                  </div>
-                  <div class="itembloco">
-                    <li class="itemtitle">Gunkan 5 unidades</li>
-                    <div class="iteminfo">
-                      <li>Quantidade: 2</li>
-                      <li>Preço: R$ 80,99</li>
-                    </div>
-                    <div class="itembtnset">
-                      <button class="itembtn"><span>Alterar </span></button>
-                      <button class="itembtn"><span>Remover </span></button>
-                    </div>
-                  </div>
-                  <div class="itembloco">
-                    <li class="itemtitle">Gunkan 5 unidades</li>
-                    <div class="iteminfo">
-                      <li>Quantidade: 2</li>
-                      <li>Preço: R$ 80,99</li>
-                    </div>
-                    <div class="itembtnset">
-                      <button class="itembtn"><span>Alterar </span></button>
-                      <button class="itembtn"><span>Remover </span></button>
-                    </div>
-                  </div>
-                  <div class="itembloco">
-                    <li class="itemtitle">Gunkan 5 unidades</li>
-                    <div class="iteminfo">
-                      <li>Quantidade: 2</li>
-                      <li>Preço: R$ 80,99</li>
-                    </div>
-                    <div class="itembtnset">
-                      <button class="itembtn"><span>Alterar </span></button>
-                      <button class="itembtn"><span>Remover </span></button>
-                    </div>
+                  <div class="itembtnset">
+                    <button class="itembtn"><span>Alterar </span></button>
+                    <button class="itembtn"><span>Remover </span></button>
                   </div>
                 </div>
-                <hr />
-                <div class="descricao-pedido">
-                  <div>Taxa de entrega: R$10,00</div>
-                  <div>Total: R$ XXX,XX</div>
+                <!-- <div class="itembloco">
+                  <li class="itemtitle">Camarão Empanado</li>
+                  <div class="iteminfo">
+                    <li>Quantidade: 2</li>
+                    <li>Preço: R$ 109,99</li>
+                  </div>
+                  <div class="itembtnset">
+                    <button class="itembtn"><span>Alterar </span></button>
+                    <button class="itembtn"><span>Remover </span></button>
+                  </div>
                 </div>
-                <button class="pagamentobtn">Ir ao pagamento</button>
+                <div class="itembloco">
+                  <li class="itemtitle">Combo Promo 01 (15 Peças)</li>
+                  <div class="iteminfo">
+                    <li>Quantidade: 1</li>
+                    <li>Preço: R$ 71,99</li>
+                  </div>
+                  <div class="itembtnset">
+                    <button class="itembtn"><span>Alterar </span></button>
+                    <button class="itembtn"><span>Remover </span></button>
+                  </div>
+                </div>
+                <div class="itembloco">
+                  <li class="itemtitle">Gunkan 5 unidades</li>
+                  <div class="iteminfo">
+                    <li>Quantidade: 2</li>
+                    <li>Preço: R$ 80,99</li>
+                  </div>
+                  <div class="itembtnset">
+                    <button class="itembtn"><span>Alterar </span></button>
+                    <button class="itembtn"><span>Remover </span></button>
+                  </div>
+                </div>
+                <div class="itembloco">
+                  <li class="itemtitle">Gunkan 5 unidades</li>
+                  <div class="iteminfo">
+                    <li>Quantidade: 2</li>
+                    <li>Preço: R$ 80,99</li>
+                  </div>
+                  <div class="itembtnset">
+                    <button class="itembtn"><span>Alterar </span></button>
+                    <button class="itembtn"><span>Remover </span></button>
+                  </div>
+                </div>
+                <div class="itembloco">
+                  <li class="itemtitle">Gunkan 5 unidades</li>
+                  <div class="iteminfo">
+                    <li>Quantidade: 2</li>
+                    <li>Preço: R$ 80,99</li>
+                  </div>
+                  <div class="itembtnset">
+                    <button class="itembtn"><span>Alterar </span></button>
+                    <button class="itembtn"><span>Remover </span></button>
+                  </div>
+                </div>
+                <div class="itembloco">
+                  <li class="itemtitle">Gunkan 5 unidades</li>
+                  <div class="iteminfo">
+                    <li>Quantidade: 2</li>
+                    <li>Preço: R$ 80,99</li>
+                  </div>
+                  <div class="itembtnset">
+                    <button class="itembtn"><span>Alterar </span></button>
+                    <button class="itembtn"><span>Remover </span></button>
+                  </div>
+                </div> -->
               </div>
+              <hr />
+              <div class="descricao-pedido">
+                <div>Taxa de entrega: R$10,00</div>
+                <div>Total: R$ XXX,XX</div>
+              </div>
+              <button class="pagamentobtn">Ir ao pagamento</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </body>
-
   <!-- <footer>
     <p>agradecimentos, considerações e autores do site</p>
   </footer> -->
