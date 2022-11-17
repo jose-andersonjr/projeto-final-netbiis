@@ -105,13 +105,43 @@
 
             <!-- Código do modal -->
             <div class="container-modal">
-              <div class="conteudo-modal row">
+              <div class="row conteudo-modal d-flex">
                 <div class="container-imagem-modal col-6">
 
                 </div>
                 <div class="container-informacoes-modal col-6">
-                  <div class="container-nome-produto"></div>
-                  <div class="container-descricao"></div>
+                  <div class="container-nome-modal text-center"></div>
+                  <div class="container-descricao-modal"></div>
+                  <textarea name="observacoes" id="observacoes" placeholder="Observação..."></textarea>
+                  <div class="container-botoes-modal">
+                    <div class="row">
+                      <div class="col-6" id="quantidade-modal">
+                        <label for="number">Quantidade</label>
+                        <input type="number" min="1" >
+                        
+                      </div>
+                      <div class="col-6">
+                        Valor unitário: '''Valor unitário'''
+                      </div>
+                      <div class="col-6">
+                        
+                      </div>
+                      
+                      <div class="col-6">
+                        Valor total: '''valor total'''
+                      </div>
+                      
+                    </div>
+                    <div class="row" id="botoes-comando">
+                      <button class="btn btn-primary mt-3" id="btn-voltar">
+                        Voltar
+                      </button>
+                      <button class="btn btn-primary mt-3" id="btn-adicionar">
+                        Adicionar
+                      </button>
+                    </div>
+                    
+                  </div>
                 </div>
 
               </div>
@@ -159,12 +189,12 @@
                 <div class="container-card-produto col-xl-6 col-sm-12">
                   <div class="row card-produto" >
                     <div class="texto-produto col">
-                      <h5>NOME DO PRODUTO</h5>
-                      <p class="descricao-produto" max_length="5000">
-                        Descrição Descrição Descrição Descrição Descrição
-                        Descrição Descrição Descrição
+                      <h5>Combo Promo 01 (15 Peças)</h5>
+                      <p class="descricao-produto">
+                        10 Hol De Salmao Grelhado Com Batata Palha Doce, 3 Niguiris De Skin Com Maionese Wasabi, 2 Gunkans De Biscoitinh 10 Hol De Salmao Grelhado Com Batata Palha Doce, 3 Niguiris De Skin Com Maionese Wasabi, 2 Gunkans De Biscoitinho Com Geleia
+
                       </p>
-                      <p class="preco-produto">R$ 99,99</p>
+                      <p class="preco-produto">R$ 40,90</p>
                     </div>
                     <div class="imagem-produto col-4">
                       <img

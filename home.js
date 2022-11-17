@@ -26,9 +26,17 @@ const switchModal = () => {
   const actualStyle = modal.style.display
   if(actualStyle == 'block') {
     modal.style.display = 'none'
-    let element = document.querySelector('.container-imagem-modal');
-    while (element.firstChild) {
-      element.removeChild(element.firstChild);
+    let imagemModal = document.querySelector('.container-imagem-modal');
+    let nomeModal = document.querySelector('.container-nome-modal');
+    let descricaoModal = document.querySelector('.container-descricao-modal');
+    while (nomeModal.firstChild) {
+      nomeModal.removeChild(nomeModal.firstChild);
+    }
+    while (imagemModal.firstChild) {
+      imagemModal.removeChild(imagemModal.firstChild);
+    }
+    while (descricaoModal.firstChild) {
+      descricaoModal.removeChild(descricaoModal.firstChild);
     }
    
   }
@@ -37,7 +45,8 @@ const switchModal = () => {
   }
 }
   window.onclick = function(event) {
-  if (event.target == modal) {
+    let btnVoltar = document.querySelector('#btn-voltar')
+  if ((event.target == modal) || (event.target == btnVoltar)) {
     switchModal()
   }
 }
@@ -50,10 +59,19 @@ var cardsProdutos = document.getElementsByClassName('card-produto')
 for(let i=0; i<cardsProdutos.length; i++){
   cardsProdutos[i].addEventListener('click', function(event) {
     let cardProduto = event.currentTarget //div do card
-    let imagemProduto = cardProduto.querySelector('.imagem-produto')
-    let imagemProdutoClone = imagemProduto.cloneNode(true)
+    let imagemDoCard = cardProduto.querySelector('.imagem-produto img')
+    let nomeDoCard = cardProduto.querySelector('.texto-produto h5')
+    let descricaoDoCard = cardProduto.querySelector('.descricao-produto')
+    descricaoDoCard.style.removeProperty("-webkit-line-clamp")
+    let imagemDoCardClone = imagemDoCard.cloneNode(true)
+    let nomeDoCardClone = nomeDoCard.cloneNode(true)
+    let descricaoDoCardClone = descricaoDoCard.cloneNode(true)
     let containerImagemModal = document.querySelector('.container-imagem-modal')
-    containerImagemModal.appendChild(imagemProdutoClone)
+    let containerNomeModal = document.querySelector('.container-nome-modal')
+    let containerDescricaoModal = document.querySelector('.container-descricao-modal')
+    containerImagemModal.appendChild(imagemDoCardClone)
+    containerNomeModal.appendChild(nomeDoCardClone)
+    containerDescricaoModal.appendChild(descricaoDoCardClone)
     switchModal()
   }, false)
 }
