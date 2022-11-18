@@ -62,21 +62,6 @@ const btnAdicionar = document.querySelector('#btn-adicionar') // <---- corrigir
 btnAdicionar.addEventListener('click', ()=>{
   
   const modalAberto = document.querySelector('.conteudo-modal')
-    //refazendo a div com JavaScript
-    // let html = `
-    // <div class="itembloco" style="border: solid 1px black;">
-    //   <li class="itemtitle"></li>
-    //   <div class="iteminfo">
-    //     <li id="itemquantidade"></li>
-    //     <li id="itempreco"></li>
-    //   </div>
-    //   <div class="itembtnset">
-    //     <button class="itembtn btn-alterar"><span>Alterar </span></button>
-    //     <button class="itembtn btn-remover"><span>Remover </span></button>
-    //   </div>
-    // </div>`
-    // $('.listapedido').append(html)
-
 
     let divItemBloco = document.createElement('div')
     divItemBloco.className = 'itembloco'

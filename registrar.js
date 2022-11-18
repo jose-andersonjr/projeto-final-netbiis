@@ -11,16 +11,15 @@ inputSenha.addEventListener('keyup', () => {
     validarSenha()
 })
 
-
 function validarSenha(){
     let senha = inputSenha.value
     let confirmarSenha = inputConfirmarSenha.value
     if((confirmarSenha.length === 6) && (senha.length === 6)){
         if(senha !== confirmarSenha){
-            botaoCadastrar.setAttribute("disabled", "disabled")
+            botaoCadastrar.disabled=true
             alert("As senhas não correspondem")
         }else{
-            botaoCadastrar.removeAttribute("disabled")
+            botaoCadastrar.disabled=false
         }
     }
 }
@@ -34,6 +33,8 @@ botaoCadastrar.addEventListener('mouseenter', () => {
 // =========================== AUTOCOMPLETE CPF ========================================= //
 
 const inputCEP = document.querySelector('#input-cep')
+const inputCPF = document.querySelector('#input-cpf')
+const inputTelefone = document.querySelector('#input-telefone')
 const inputCidade = document.querySelector('#cidade')
 const inputBairro = document.querySelector('#bairro')
 const inputLogradouro = document.querySelector('#logradouro')
@@ -51,11 +52,32 @@ inputCEP.addEventListener("keypress", (e) => {
     }
 })
 
+inputCPF.addEventListener("keypress", (e) => {
+  const numeros = /[0-9]/;
+  const key = String.fromCharCode(e.keyCode);
+
+  if (!numeros.test(key)) {
+      e.preventDefault();
+      return;
+  }
+})
+
+inputTelefone.addEventListener("keypress", (e) => {
+  const numeros = /[0-9]/;
+  const key = String.fromCharCode(e.keyCode);
+
+  if (!numeros.test(key)) {
+      e.preventDefault();
+      return;
+  }
+})
+
 // Checar se o texto digitado tem o tamanho correto
 inputCEP.addEventListener("keyup", (e) => {
     const valorInput = e.target.value.replace("-", "");
     
     if(valorInput.length === 8) {
+      inputCEP.disabled=true
         getAddress(valorInput);
     }
     
@@ -73,6 +95,7 @@ const getAddress = async (cep) => {
 
     if (data.erro) {
         alert("CEP inválido, favor insira o CEP corretamente!")
+        inputCEP.disabled=false
     }else{
         inputCidade.value = data.localidade
         inputBairro.value = data.bairro
@@ -100,10 +123,6 @@ window.addEventListener('load', () => {
       e.target.value = x[1] + '.' + x[2] + '.' + x[3] + '-' + x[4]
     })
   
-    document.querySelector('#input-cep').addEventListener('input', function (e) {
-      var x = e.target.value.replace(/\D/g, '').match(/(\d{5})(\d{3})/)
-      e.target.value = x[1] + '-' + x[2]
-    })
   })
   
   ////////////////////////////////////////////////////////////////////////////////////////////

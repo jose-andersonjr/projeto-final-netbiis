@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d7f7e932-6dc1-44a5-96a3-eb5764f74436" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/img/background-login.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/background-login2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/background-login3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/background-login4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/background-registrar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/imagem-registrar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo-topo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo-wasabiapp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/entradas/BOLINHAS_DE_SALMÃO_FRITAS.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/entradas/GUIOZA_5_UNIDADES.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/entradas/HOLL_TARTAR_DE_SALMÃO.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/entradas/KASAI.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/entradas/LULA_EM_ANÉIS_GRELHADA.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/entradas/MEGASABI.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/promocoes/CAMARÃO_EMPANADO_5_UNIDADES.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/promocoes/COMBO_PROMO_01_15 PEÇAS.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/promocoes/COMBO_PROMO_02 _15 PEÇAS.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/promocoes/COMBO_PROMO_03_15 PEÇAS.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/promocoes/COMBO_PROMO_6_15 PEÇAS.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/promocoes/COMBO_PROMO_7_15 PEÇAS.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/temaki/PROMO_VEGANO_ 15_PEÇAS.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/temaki/SKINMAKI.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/temaki/TEMAKI_EXOTIC.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/temaki/TEMAKI_PORÓ.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/temaki/TEMAKI_SALMÃO_ESPECIAL.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/temaki/TEMAKI_WASABI_ESPECIAL.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/wasabiholl/MISSOSHIRU.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/wasabiholl/PATINHAS_DE_CARANGUEJO.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/wasabiholl/SALMÃO_EM_CONSUMER.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/wasabiholl/WASABI_ESPECIAL.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos/wasabiholl/WASABI_HOLL.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/entradas/BOLINHAS_DE_SALMÃO_FRITAS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/entradas/GUIOZA_5_UNIDADES.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/entradas/HOLL_TARTAR_DE_SALMÃO.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/entradas/KASAI.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/entradas/LULA_EM_ANÉIS_GRELHADA.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/entradas/MEGASABI.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/promocoes/CAMARÃO_EMPANADO_5_UNIDADES.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/promocoes/COMBO_PROMO_01_15 PEÇAS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/promocoes/COMBO_PROMO_02 _15 PEÇAS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/promocoes/COMBO_PROMO_03_15 PEÇAS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/promocoes/COMBO_PROMO_6_15 PEÇAS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/promocoes/COMBO_PROMO_7_15 PEÇAS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/temaki/PROMO_VEGANO_ 15_PEÇAS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/temaki/SKINMAKI.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/temaki/TEMAKI_EXOTIC.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/temaki/TEMAKI_PORÓ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/temaki/TEMAKI_SALMÃO_ESPECIAL.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/temaki/TEMAKI_WASABI_ESPECIAL.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/wasabiholl/MISSOSHIRU.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/wasabiholl/PATINHAS_DE_CARANGUEJO.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/wasabiholl/SALMÃO_EM_CONSUMER.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/wasabiholl/WASABI_ESPECIAL.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/produtos_png/wasabiholl/WASABI_HOLL.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/topo-home.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/topo-home2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/registrar.js" beforeDir="false" afterPath="$PROJECT_DIR$/registrar.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2HjclF6WJxiwLos5ZOrHj3z9gky" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d7f7e932-6dc1-44a5-96a3-eb5764f74436" name="Changes" comment="" />
+      <created>1668802087982</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668802087982</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
