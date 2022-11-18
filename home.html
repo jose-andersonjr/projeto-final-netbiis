@@ -34,6 +34,9 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" 
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" 
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="home.css" />
     <script src="home.js" defer></script>
   </head>
@@ -131,11 +134,11 @@
               <div class="container-quantidade-preco-modal row">
                 <div class="col-6" id="quantidade-modal">
                   <label for="number">Quantidade</label>
-                  <input type="number" min="1" value="1" onkeydown="return false" id="quantidade-modal"/>
+                  <input type="number" min="1" value="1" onkeydown="return false" id="quantidade"/>
                 </div>
                 <div class="col-6" id="valor-unit-modal"></div>
                 <div class="col-6"></div>
-                <div class="col-6" id="valor-total-modal">Valor total: </div>
+                <div class="col-6" id="valor-total-modal">Valor total: <span></span></div>
               </div>
               <div class="container-botoes-modal">
                 <div class="row" id="botoes-comando">
@@ -650,83 +653,7 @@
               <div id="titulo-carrinho">Pedido</div>
               <hr />
               <div class="listapedido">
-                <div class="itembloco" style="border: solid 1px black;">
-                  <li class="itemtitle"></li>
-                  <div class="iteminfo">
-                    <li id="itemquantidade"></li>
-                    <li id="itempreco"></li>
-                  </div>
-                  <div class="itembtnset">
-                    <button class="itembtn"><span>Alterar </span></button>
-                    <button class="itembtn"><span>Remover </span></button>
-                  </div>
-                </div>
-                <!-- <div class="itembloco">
-                  <li class="itemtitle">Camarão Empanado</li>
-                  <div class="iteminfo">
-                    <li>Quantidade: 2</li>
-                    <li>Preço: R$ 109,99</li>
-                  </div>
-                  <div class="itembtnset">
-                    <button class="itembtn"><span>Alterar </span></button>
-                    <button class="itembtn"><span>Remover </span></button>
-                  </div>
-                </div>
-                <div class="itembloco">
-                  <li class="itemtitle">Combo Promo 01 (15 Peças)</li>
-                  <div class="iteminfo">
-                    <li>Quantidade: 1</li>
-                    <li>Preço: R$ 71,99</li>
-                  </div>
-                  <div class="itembtnset">
-                    <button class="itembtn"><span>Alterar </span></button>
-                    <button class="itembtn"><span>Remover </span></button>
-                  </div>
-                </div>
-                <div class="itembloco">
-                  <li class="itemtitle">Gunkan 5 unidades</li>
-                  <div class="iteminfo">
-                    <li>Quantidade: 2</li>
-                    <li>Preço: R$ 80,99</li>
-                  </div>
-                  <div class="itembtnset">
-                    <button class="itembtn"><span>Alterar </span></button>
-                    <button class="itembtn"><span>Remover </span></button>
-                  </div>
-                </div>
-                <div class="itembloco">
-                  <li class="itemtitle">Gunkan 5 unidades</li>
-                  <div class="iteminfo">
-                    <li>Quantidade: 2</li>
-                    <li>Preço: R$ 80,99</li>
-                  </div>
-                  <div class="itembtnset">
-                    <button class="itembtn"><span>Alterar </span></button>
-                    <button class="itembtn"><span>Remover </span></button>
-                  </div>
-                </div>
-                <div class="itembloco">
-                  <li class="itemtitle">Gunkan 5 unidades</li>
-                  <div class="iteminfo">
-                    <li>Quantidade: 2</li>
-                    <li>Preço: R$ 80,99</li>
-                  </div>
-                  <div class="itembtnset">
-                    <button class="itembtn"><span>Alterar </span></button>
-                    <button class="itembtn"><span>Remover </span></button>
-                  </div>
-                </div>
-                <div class="itembloco">
-                  <li class="itemtitle">Gunkan 5 unidades</li>
-                  <div class="iteminfo">
-                    <li>Quantidade: 2</li>
-                    <li>Preço: R$ 80,99</li>
-                  </div>
-                  <div class="itembtnset">
-                    <button class="itembtn"><span>Alterar </span></button>
-                    <button class="itembtn"><span>Remover </span></button>
-                  </div>
-                </div> -->
+
               </div>
               <hr />
               <div class="descricao-pedido">

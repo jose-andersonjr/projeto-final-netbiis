@@ -59,32 +59,85 @@ window.onclick = function (event) {
 const listaPedido = document.querySelector('div.listapedido')
 const btnAdicionar = document.querySelector('#btn-adicionar') // <---- corrigir 
 
-btnAdicionar.onclick = function (event) {
+btnAdicionar.addEventListener('click', ()=>{
   
-const modalAberto = document.querySelector('.conteudo-modal')
+  const modalAberto = document.querySelector('.conteudo-modal')
+    //refazendo a div com JavaScript
+    // let html = `
+    // <div class="itembloco" style="border: solid 1px black;">
+    //   <li class="itemtitle"></li>
+    //   <div class="iteminfo">
+    //     <li id="itemquantidade"></li>
+    //     <li id="itempreco"></li>
+    //   </div>
+    //   <div class="itembtnset">
+    //     <button class="itembtn btn-alterar"><span>Alterar </span></button>
+    //     <button class="itembtn btn-remover"><span>Remover </span></button>
+    //   </div>
+    // </div>`
+    // $('.listapedido').append(html)
+
+
+    let divItemBloco = document.createElement('div')
+    divItemBloco.className = 'itembloco'
+    let liItemTitle = document.createElement('li')
+    liItemTitle.className = 'itemtitle'
+    let divItemInfo = document.createElement('div')
+    divItemInfo.className = 'iteminfo'
+    let liItemQuantidade = document.createElement('li')
+    liItemQuantidade.id = 'itemquantidade'
+    let liItemPreco = document.createElement('li')
+    liItemPreco.id = 'itempreco'
+    let divItemBtnSet = document.createElement('div')
+    divItemBtnSet.className = 'itembtnset'
+    let btnAlterar = document.createElement('button')
+    btnAlterar.className = 'itembtn'
+    btnAlterar.className = 'btn-alterar'
+    let liItemBtn = document.createElement('span')
+    let btnRemover = document.createElement('button')
+    btnRemover.className = 'itembtn'
+    btnRemover.className = 'btn-remover'
+    // btnRemover.setAttribute('onclick', 'removerProduto(source)')
+    btnRemover.addEventListener('click', (event)=>{
+      let cardProdutoCarrinho = divItemBloco
+      cardProdutoCarrinho.remove()
+    })
+    let liItemBtn2 = document.createElement('span')
+    
+    divItemBtnSet.appendChild(btnAlterar)
+    divItemBtnSet.appendChild(btnRemover)
+    divItemInfo.appendChild(liItemQuantidade)
+    divItemInfo.appendChild(liItemPreco)
+    divItemBloco.appendChild(liItemTitle)
+    divItemBloco.appendChild(divItemInfo)
+    divItemBloco.appendChild(divItemBtnSet)
+    
+    listaPedido.appendChild(divItemBloco)
+
+
+ // pegando o valor unitário do produto e convertendoi ele para numero
+  let precoProdutoModal = modalAberto.querySelector('.preco-produto').textContent
+  precoProdutoModal = precoProdutoModal.replace('R$', '')
+  precoProdutoModal = precoProdutoModal.replace(',', '.')
   
-  let divItemPedido = document.createElement('div')
-  divItemPedido.style.setProperty('border', 'solid 3px black')
-  divItemPedido.style.setProperty('margin-bottom', '5%')
 
-  let tituloModal = modalAberto.querySelector('.container-nome-modal h5')
-  let quantidadeModal = modalAberto.querySelector('input#quantidade-modal').value
-  let valorUnitlModal = modalAberto.querySelector('span.preco-produto').innerHTML.replace('R$ ', '').replace(',', '.')
+
+ // colocando um valor no Valortotal no modal
+
+  let quantidadeModal = modalAberto.querySelector('#quantidade')
+  let quantidade = quantidadeModal.value
   
-  let valorTotal = (quantidadeModal * valorUnitlModal).toFixed(2)
+  precoProdutoModal = precoProdutoModal*quantidade
+  liItemPreco.innerText = precoProdutoModal
+  
 
-  // let valorTotalModal = modalAberto.querySelector('div#valor-total-modal').innerHTML
 
-  // console.log(valorUnitlModal)
 
-  // let itemTitulo = document.querySelector('.itemtitle')
-  // let itemQuantidade = document.querySelector('#itemquantidade')
-  // let itemPreco = document.querySelector('#itempreco')
-
-  // listaPedido.append(divItemPedido)
-  // divItemPedido.append(nomeDoCardClone)
   switchModal()
-}
+})
+
+
+
 
 // =================================================== GERAR O CONTEUDO DO MODAL ==============================================================
 
