@@ -57,12 +57,12 @@ window.onclick = function (event) {
 
 // ===================================== PASSAGEM DE DADOS MODAL -> LISTA DE PEDIDO =========================================================
 const listaPedido = document.querySelector('div.listapedido')
-const btnAdicionar = document.querySelector('#btn-adicionar') // <---- corrigir 
+const btnAdicionar = document.querySelector('#btn-adicionar') 
 
 btnAdicionar.addEventListener('click', ()=>{
   
   const modalAberto = document.querySelector('.conteudo-modal')
-
+  /// ======================= CRIANDO A DIV DE CADA PRODUTO =========================
     let divItemBloco = document.createElement('div')
     divItemBloco.className = 'itembloco'
     let liItemTitle = document.createElement('li')
@@ -74,22 +74,12 @@ btnAdicionar.addEventListener('click', ()=>{
     let liItemPreco = document.createElement('li')
     liItemPreco.id = 'itempreco'
     let divItemBtnSet = document.createElement('div')
-    divItemBtnSet.className = 'itembtnset'
-    let btnAlterar = document.createElement('button')
-    btnAlterar.className = 'itembtn'
-    btnAlterar.className = 'btn-alterar'
-    let liItemBtn = document.createElement('span')
+    divItemBtnSet.className = 'itembtnset' 
     let btnRemover = document.createElement('button')
-    btnRemover.className = 'itembtn'
-    btnRemover.className = 'btn-remover'
-    // btnRemover.setAttribute('onclick', 'removerProduto(source)')
-    btnRemover.addEventListener('click', (event)=>{
-      let cardProdutoCarrinho = divItemBloco
-      cardProdutoCarrinho.remove()
-    })
-    let liItemBtn2 = document.createElement('span')
+    btnRemover.className = 'itembtn'  
+    btnRemover.innerHTML = '<span>Remover</span>'
+  
     
-    divItemBtnSet.appendChild(btnAlterar)
     divItemBtnSet.appendChild(btnRemover)
     divItemInfo.appendChild(liItemQuantidade)
     divItemInfo.appendChild(liItemPreco)
@@ -104,25 +94,48 @@ btnAdicionar.addEventListener('click', ()=>{
   let precoProdutoModal = modalAberto.querySelector('.preco-produto').textContent
   precoProdutoModal = precoProdutoModal.replace('R$', '')
   precoProdutoModal = precoProdutoModal.replace(',', '.')
-  
 
+  precoProdutoModal = round(precoProdutoModal)
+
+// PEGANDO O NOME DO PRODUTO
+  let nomeProduto = modalAberto.querySelector('.container-nome-modal h5').textContent
+  liItemTitle.innerText = nomeProduto
 
  // colocando um valor no Valortotal no modal
 
+  
   let quantidadeModal = modalAberto.querySelector('#quantidade')
   let quantidade = quantidadeModal.value
+  liItemQuantidade.innerText = 'Quantidade: ' + quantidade
   
-  precoProdutoModal = precoProdutoModal*quantidade
-  liItemPreco.innerText = precoProdutoModal
+  
+  let precoTotal = precoProdutoModal*quantidade
+  precoTotal = round(precoTotal)
+  liItemPreco.innerText = 'Preço: R$' + precoTotal
+
+      // ADICIONANDO FUNCAO DE REMOVER O PROPRIO BOTAO
+  btnRemover.addEventListener('click', (event)=>{
+    let cardProdutoCarrinho = divItemBloco
+    somarTotalPedido(Math.abs(precoTotal) * -1)
+    cardProdutoCarrinho.remove()
+  })
   
 
-
+  somarTotalPedido(precoTotal)
 
   switchModal()
 })
 
+let valorTotalPedido = 10;
+function somarTotalPedido(precoProduto){
+  precoProduto = round(precoProduto)
+  valorTotalPedido = round(valorTotalPedido + precoProduto)
+  document.querySelector('#totalpedidocarrinho').innerText = valorTotalPedido
+}
 
-
+function round(num) {
+  return +(Math.round(num + "e+2")  + "e-2");
+}
 
 // =================================================== GERAR O CONTEUDO DO MODAL ==============================================================
 
